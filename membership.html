@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership | KNEWA</title>
+    <meta name="description" content="Join KNEWA: who can join, benefits, fees and the membership form.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Public+Sans:wght@400;600&display=swap">
+
+    <!-- Bootstrap, then our own styles -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===================== NAVIGATION ===================== -->
+<nav class="navbar navbar-expand-lg site-nav">
+    <div class="container">
+        <a class="navbar-brand brand" href="index.html">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span>
+                <span class="brand-name">KNEWA</span>
+                <span class="brand-sub">Kenyans in New England Welfare Association</span>
+            </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mainMenu" aria-controls="mainMenu"
+                aria-expanded="false" aria-label="Open menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainMenu">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                <li class="nav-item"><a class="nav-link" href="welfare.html">Welfare support</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item ms-lg-3">
+                    <a class="btn btn-gold" href="membership.html">Join KNEWA</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ===================== PAGE BANNER ===================== -->
+<header class="page-hero">
+    <div class="container">
+        <p class="hero-place">Membership</p>
+        <h1>Join the KNEWA family</h1>
+        <p class="hero-lead">Join the Kenyan community of the New England region: welfare support when you need it, a vote in how KNEWA is run, and people who have your back.</p>
+    </div>
+    <svg class="hills" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,80 C120,40 220,70 320,55 C430,38 520,10 640,30 C760,50 820,85 950,70
+                 C1070,56 1150,20 1270,35 C1350,45 1400,60 1440,55 L1440,120 L0,120 Z"/>
+    </svg>
+    <div class="kikoi" aria-hidden="true"></div>
+</header>
+
+<main>
+<section class="section">
+    <div class="container">
+        <div class="row g-4 g-lg-5">
+            <div class="col-lg-5 prose">
+                <h2 class="section-title">Who can join</h2>
+                <p>Membership is open to Kenyans living in or connected with the New England region who support the
+                   association's objectives. Financial members must be 18 or over; people under 18 can join with a
+                   parent or guardian's written consent.</p>
+                <h3 class="h5 mt-4">Types of membership</h3>
+                <ul class="tick-list">
+                    <li><strong>Financial member:</strong> pays the joining fees, can vote at general meetings, stand for the committee and receive welfare support.</li>
+                    <li><strong>Community member:</strong> free. Receives news and can attend events, but cannot vote or hold office.</li>
+                    <li><strong>Life and honorary members:</strong> recognised by the association for outstanding service.</li>
+                </ul>
+
+                <h2 class="section-title mt-5">What you get</h2>
+                <ul class="tick-list">
+                    <li>Welfare fund support in times of need</li>
+                    <li>A vote at the Annual General Meeting</li>
+                    <li>First news of events and opportunities</li>
+                    <li>A welcoming network across the region</li>
+                </ul>
+
+                <h2 class="section-title mt-5">Fees</h2>
+                <!-- Fees agreed at the committee meeting of 23 August 2026 (to be finalised). UPDATE if they change. -->
+                <table class="fees">
+                    <tr><th scope="row">Registration fee</th><td>$30</td></tr>
+                    <tr><th scope="row">Welfare fund contribution</th><td>$170</td></tr>
+                    <tr class="fees-total"><th scope="row">Total for new members</th><td>$200</td></tr>
+                    <tr><th scope="row">Community membership</th><td>Free</td></tr>
+                </table>
+                <p class="note">Payment details are sent after your application is received.</p>
+            </div>
+
+            <div class="col-lg-7">
+                <div class="form-card">
+                    <h2 class="h3 mb-3">Membership application</h2>
+                    <form name="membership" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field">
+                        <p class="d-none"><label>Leave this empty: <input name="bot-field"></label></p>
+
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="m-first" class="form-label">First name</label>
+                                <input type="text" id="m-first" name="first-name" class="form-control" required autocomplete="given-name">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="m-last" class="form-label">Last name</label>
+                                <input type="text" id="m-last" name="last-name" class="form-control" required autocomplete="family-name">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="m-email" class="form-label">Email</label>
+                                <input type="email" id="m-email" name="email" class="form-control" required autocomplete="email">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="m-phone" class="form-label">Mobile</label>
+                                <input type="tel" id="m-phone" name="phone" class="form-control" required autocomplete="tel">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="m-town" class="form-label">Town you live in</label>
+                                <input type="text" id="m-town" name="town" class="form-control" required placeholder="e.g. Tamworth">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="m-type" class="form-label">Membership type</label>
+                                <select id="m-type" name="membership-type" class="form-select">
+                                    <option>Financial member ($200 to join)</option>
+                                    <option>Community member (free)</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="m-family" class="form-label">Family members to register (optional)</label>
+                                <textarea id="m-family" name="family-members" rows="3" class="form-control" placeholder="Name and relationship, one per line"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <label for="m-hear" class="form-label">How did you hear about us? (optional)</label>
+                                <input type="text" id="m-hear" name="heard-about-us" class="form-control">
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input type="checkbox" id="m-agree" name="agree-constitution" class="form-check-input" required>
+                                    <label for="m-agree" class="form-check-label">I support KNEWA's objectives and agree to follow its constitution.</label>
+                                </div>
+                                <div class="form-check mt-2">
+                                    <input type="checkbox" id="m-privacy" name="privacy-consent" class="form-check-input" required>
+                                    <label for="m-privacy" class="form-check-label">I agree to KNEWA using these details to manage my membership, as described in the <a href="privacy.html">Privacy policy</a>.</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-gold btn-lg">Send application</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-5">
+                <p class="footer-name">Kenyans in New England Welfare Association Inc</p>
+                <p>A not-for-profit, non-political community association promoting the welfare, unity and
+                   empowerment of Kenyans in the New England region of NSW.</p>
+                <p class="footer-reg">Incorporated in NSW under the <em>Associations Incorporation Act 2009</em><br>
+                   Registration no. INC2601004 &middot; ABN 17 238 522 745</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <p class="footer-head">Explore</p>
+                <ul class="footer-links">
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="welfare.html">Welfare support</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-4">
+                <p class="footer-head">Get in touch</p>
+                <ul class="footer-links">
+                    <!-- UPDATE with KNEWA's real contact details -->
+                    <li><a href="mailto:secretary@kenewa.org">secretary@kenewa.org</a></li>
+                    <li>Tamworth, NSW</li>
+                    <li><a href="contact.html">Contact form</a></li>
+                </ul>
+                <!-- UPDATE: paste the links to KNEWA's pages in place of each # -->
+                <ul class="social">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">TikTok</a></li>
+                    <li><a href="#">WhatsApp</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; <span id="year">2026</span> Kenyans in New England Welfare Association Inc</span>
+            <a href="privacy.html">Privacy policy</a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
