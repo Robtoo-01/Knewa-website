@@ -151,6 +151,6 @@ Never put passwords, bank details or members' personal information in these file
 
 ## Maintained by
 
-The KNEWA committee. IT and Communications: Evans Yego. Secretary: Michael Kiplangat.
+The KNEWA committee. IT and Communications:  Yego. Secretary:  Rob.
 
 Questions about the website: secretary@kenewa.org <!-- UPDATE if the email changes -->
