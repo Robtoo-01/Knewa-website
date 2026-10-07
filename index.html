@@ -10,11 +10,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Public+Sans:wght@400;600&display=swap">
+          href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap">
 
-    <!-- Bootstrap, then our own styles -->
+    <!-- Bootstrap and icons, then our own styles -->
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -67,13 +69,14 @@
         <!-- Slide 1 -->
         <div class="carousel-item active slide-1">
             <div class="container hero-content">
-                <p class="hero-place">Tamworth, Armidale and the New England region</p>
-                <h1>Far from home,<br>never alone</h1>
-                <p class="hero-lead">KNEWA brings Kenyans across the New England region together, to stand by
-                    each other on the hard days, celebrate the good ones, and contribute to the community we now call home.</p>
+                <p class="eyebrow">Tamworth · Armidale · New England, NSW</p>
+                <h1>Far from home, <em>never</em> alone</h1>
+                <p class="hero-lead">More than a welfare group: KNEWA brings Kenyans across the New England region
+                    together, to stand by each other on the hard days, celebrate the good ones, and contribute
+                    to the community we now call home.</p>
                 <div class="hero-actions">
-                    <a href="membership.html" class="btn btn-gold btn-lg">Become a member</a>
-                    <a href="about.html" class="btn btn-ghost btn-lg">About KNEWA</a>
+                    <a href="membership.html" class="btn btn-gold btn-lg">Join us today</a>
+                    <a href="about.html" class="btn btn-ghost btn-lg">Learn more</a>
                 </div>
             </div>
         </div>
@@ -81,8 +84,8 @@
         <!-- Slide 2 -->
         <div class="carousel-item slide-2">
             <div class="container hero-content">
-                <p class="hero-place">New to the region?</p>
-                <h1>A familiar welcome in a new town</h1>
+                <p class="eyebrow">Settling in · Networking · Belonging</p>
+                <h1>A familiar <em>welcome</em> in a new town</h1>
                 <p class="hero-lead">Whether you've come for work, study or family, we'll help you find
                     your feet: people to call, places to go, and a community that already feels like home.</p>
                 <div class="hero-actions">
@@ -95,8 +98,8 @@
         <!-- Slide 3 -->
         <div class="carousel-item slide-3">
             <div class="container hero-content">
-                <p class="hero-place">Welfare support</p>
-                <h1>When one family struggles, we all show up</h1>
+                <p class="eyebrow">Bereavement · Illness · Hardship</p>
+                <h1>When one family struggles, <em>we all</em> show up</h1>
                 <p class="hero-lead">Every member contributes to the KNEWA welfare fund, so that in bereavement,
                     illness or hardship, help is ready and nobody carries it alone.</p>
                 <div class="hero-actions">
@@ -107,76 +110,81 @@
         </div>
     </div>
 
-    <!-- New England tablelands silhouette -->
-    <svg class="hills" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
-        <path d="M0,80 C120,40 220,70 320,55 C430,38 520,10 640,30 C760,50 820,85 950,70
-                 C1070,56 1150,20 1270,35 C1350,45 1400,60 1440,55 L1440,120 L0,120 Z"/>
-    </svg>
-    <div class="kikoi" aria-hidden="true"></div>
+    <a href="#numbers" class="scroll-cue">Scroll</a>
 </header>
 
 <!-- ===================== NUMBERS ===================== -->
-<!-- UPDATE these figures as the association grows -->
-<section class="numbers" aria-label="KNEWA in numbers">
+<!-- UPDATE these figures as the association grows. data-count is the number the counter animates to. -->
+<section class="numbers" id="numbers" aria-label="KNEWA in numbers">
     <div class="container">
-        <div class="row text-center g-4">
-            <div class="col-6 col-lg-3">
-                <p class="num">12</p>
-                <p class="num-label">Founding members</p>
-            </div>
-            <div class="col-6 col-lg-3">
-                <p class="num">2026</p>
-                <p class="num-label">Incorporated in NSW</p>
-            </div>
-            <div class="col-6 col-lg-3">
-                <p class="num">14</p>
-                <p class="num-label">Volunteer committee members</p>
-            </div>
-            <div class="col-6 col-lg-3">
-                <p class="num">3</p>
-                <p class="num-label">Kenyan national days celebrated</p>
+        <div class="stats-card">
+            <div class="row text-center g-4">
+                <div class="col-6 col-lg-3 stat">
+                    <p class="num"><span data-count="12">12</span></p>
+                    <p class="num-label">Founding members</p>
+                </div>
+                <div class="col-6 col-lg-3 stat">
+                    <p class="num"><span data-count="14">14</span></p>
+                    <p class="num-label">Volunteer committee</p>
+                </div>
+                <div class="col-6 col-lg-3 stat">
+                    <p class="num">2026</p>
+                    <p class="num-label">Incorporated in NSW</p>
+                </div>
+                <div class="col-6 col-lg-3 stat">
+                    <p class="num"><span data-count="3">3</span></p>
+                    <p class="num-label">Kenyan national days</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- ===================== PROMISE & VALUES ===================== -->
+<!-- ===================== FOUNDING PROMISE & VALUES ===================== -->
 <section class="promise">
     <div class="container">
-        <div class="row g-4 g-lg-5 align-items-center">
-            <div class="col-lg-6">
-                <h2 class="section-title">Our vision</h2>
-                <blockquote class="promise-quote">
-                    <p>A united, inclusive and thriving Kenyan community that supports one another
-                       and contributes positively to Australian society.</p>
-                </blockquote>
-                <p class="mission"><strong>Our mission</strong> is to promote the welfare, unity and empowerment of
-                   Kenyans in the New England region through mutual support, community engagement,
-                   cultural preservation and collaboration.</p>
+        <div class="text-center"><p class="eyebrow">Our founding promise</p></div>
+        <blockquote class="promise-quote">
+            <p>A united, inclusive and thriving Kenyan community that supports one another
+               and contributes positively to Australian society.</p>
+        </blockquote>
+        <p class="promise-by">Kenyans in New England Welfare Association, est. 2026</p>
+        <p class="mission"><strong>Our mission</strong> is to promote the welfare, unity and empowerment of
+           Kenyans in the New England region through mutual support, community engagement,
+           cultural preservation and collaboration.</p>
+
+        <div class="row g-4 mt-4">
+            <div class="col-sm-6 col-lg-3">
+                <div class="value-card">
+                    <span class="value-icon" aria-hidden="true"><i class="bi bi-people-fill"></i></span>
+                    <h3>Umoja</h3>
+                    <p class="value-en">Unity</p>
+                    <p>One community across every town and background.</p>
+                </div>
             </div>
-            <div class="col-lg-6">
-                <ul class="values">
-                    <li>
-                        <span class="sw">Umoja</span>
-                        <span class="en">Unity</span>
-                        <span class="desc">One community across every town and background.</span>
-                    </li>
-                    <li>
-                        <span class="sw">Upendo</span>
-                        <span class="en">Care</span>
-                        <span class="desc">We look out for one another, especially when it's hard.</span>
-                    </li>
-                    <li>
-                        <span class="sw">Heshima</span>
-                        <span class="en">Respect</span>
-                        <span class="desc">For every member, elder, culture and neighbour.</span>
-                    </li>
-                    <li>
-                        <span class="sw">Uaminifu</span>
-                        <span class="en">Integrity</span>
-                        <span class="desc">Open, accountable handling of members' contributions.</span>
-                    </li>
-                </ul>
+            <div class="col-sm-6 col-lg-3">
+                <div class="value-card">
+                    <span class="value-icon" aria-hidden="true"><i class="bi bi-heart-fill"></i></span>
+                    <h3>Upendo</h3>
+                    <p class="value-en">Care</p>
+                    <p>We look out for one another, especially when it's hard.</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="value-card">
+                    <span class="value-icon" aria-hidden="true"><i class="bi bi-hand-thumbs-up-fill"></i></span>
+                    <h3>Heshima</h3>
+                    <p class="value-en">Respect</p>
+                    <p>For every member, elder, culture and neighbour.</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="value-card">
+                    <span class="value-icon" aria-hidden="true"><i class="bi bi-shield-check"></i></span>
+                    <h3>Uaminifu</h3>
+                    <p class="value-en">Integrity</p>
+                    <p>Open, accountable handling of members' contributions.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -188,40 +196,47 @@
         <div class="row g-4 g-lg-5">
             <div class="col-lg-4">
                 <div class="why-intro">
-                    <h2 class="section-title">Why families join KNEWA</h2>
+                    <p class="eyebrow">Why join KNEWA</p>
+                    <h2 class="section-title">More than membership, it's <em>belonging</em></h2>
                     <p>Membership means people who know you, a plan for when life gets hard, and plenty
-                       to celebrate along the way.</p>
-                    <a href="membership.html" class="btn btn-gold btn-lg mt-2">Become a member</a>
+                       to celebrate along the way. Here's what you gain when you join.</p>
+                    <a href="membership.html" class="btn btn-forest btn-lg mt-2">Become a member</a>
                 </div>
             </div>
             <div class="col-lg-8">
                 <div class="benefits">
                     <article class="benefit">
+                        <span class="benefit-icon" aria-hidden="true"><i class="bi bi-life-preserver"></i></span>
                         <h3>Welfare in hard times</h3>
                         <p>Members contribute to a welfare fund that supports families through bereavement,
                            including funeral and repatriation costs, serious illness and emergencies.</p>
                     </article>
                     <article class="benefit">
+                        <span class="benefit-icon" aria-hidden="true"><i class="bi bi-house-heart"></i></span>
                         <h3>A welcome for new arrivals</h3>
                         <p>Help settling in: housing, jobs, Medicare and Centrelink, licences, schools,
                            and introductions to local settlement services.</p>
                     </article>
                     <article class="benefit">
+                        <span class="benefit-icon" aria-hidden="true"><i class="bi bi-music-note-beamed"></i></span>
                         <h3>Culture and national days</h3>
                         <p>Madaraka Day, Mashujaa Day and Jamhuri Day celebrations, and Kenyan food, music
                            and language shared with our children and neighbours.</p>
                     </article>
                     <article class="benefit">
+                        <span class="benefit-icon" aria-hidden="true"><i class="bi bi-mortarboard"></i></span>
                         <h3>Students and youth</h3>
                         <p>A student representative on the committee, orientation for international students,
                            and mentoring for young Kenyan-Australians.</p>
                     </article>
                     <article class="benefit">
+                        <span class="benefit-icon" aria-hidden="true"><i class="bi bi-flower1"></i></span>
                         <h3>Women's empowerment</h3>
                         <p>A dedicated committee role and space for women to support each other, including
                            savings and investment circles in the chama tradition.</p>
                     </article>
                     <article class="benefit">
+                        <span class="benefit-icon" aria-hidden="true"><i class="bi bi-trophy"></i></span>
                         <h3>Sport, wellbeing and networking</h3>
                         <p>Sports days, mental health and wellbeing sessions, and a network for careers,
                            education and business across the region.</p>
@@ -234,14 +249,15 @@
 
 <!-- ===================== CALL TO ACTION ===================== -->
 <section class="cta">
-    <div class="kikoi kikoi-top" aria-hidden="true"></div>
     <div class="container text-center">
-        <h2>Ready to join the KNEWA family?</h2>
+        <p class="eyebrow">Take the first step</p>
+        <h2>Ready to join the KNEWA <em>family</em>?</h2>
         <p>Membership is open to Kenyans living in or connected with the New England region who support
            the association's objectives. Joining takes a few minutes.</p>
         <div class="cta-actions">
             <a href="membership.html" class="btn btn-gold btn-lg">Become a member</a>
-            <a href="contact.html" class="btn btn-ghost btn-lg">Ask us a question</a>
+            <span class="cta-or">or</span>
+            <a href="about.html" class="cta-link">Learn more about us</a>
         </div>
     </div>
 </section>
@@ -264,22 +280,23 @@
                     <li><a href="events.html">Events</a></li>
                     <li><a href="welfare.html">Welfare support</a></li>
                     <li><a href="membership.html">Membership</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="col-6 col-md-4">
                 <p class="footer-head">Get in touch</p>
                 <ul class="footer-links">
                     <!-- UPDATE with KNEWA's real contact details -->
-                    <li><a href="mailto:secretary@kenewa.org">secretary@kenewa.org</a></li>
-                    <li>Tamworth, NSW</li>
-                    <li><a href="contact.html">Contact form</a></li>
+                    <li><i class="bi bi-envelope" aria-hidden="true"></i><a href="mailto:secretary@kenewa.org">secretary@kenewa.org</a></li>
+                    <li><i class="bi bi-geo-alt" aria-hidden="true"></i>Tamworth, NSW</li>
+                    <li><i class="bi bi-chat-dots" aria-hidden="true"></i><a href="contact.html">Contact form</a></li>
                 </ul>
                 <!-- UPDATE: paste the links to KNEWA's pages in place of each # -->
                 <ul class="social">
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">TikTok</a></li>
-                    <li><a href="#">WhatsApp</a></li>
+                    <li><a href="#" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#" aria-label="TikTok"><i class="bi bi-tiktok" aria-hidden="true"></i></a></li>
+                    <li><a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
         </div>

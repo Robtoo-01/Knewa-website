@@ -6,7 +6,7 @@ The website of **Kenyans in New England Welfare Association Inc** (KNEWA), a not
 - Registration no. INC2601004
 - ABN 17 238 522 745
 
-This is a simple static website: plain HTML and CSS with [Bootstrap 5](https://getbootstrap.com). There is no database and nothing to install or build. It runs on any computer, or on a phone with VSCodroid.
+This is a simple static website: plain HTML and CSS with [Bootstrap 5](https://getbootstrap.com) and [Bootstrap Icons](https://icons.getbootstrap.com). There is no database and nothing to install or build. It runs on any computer, or on a phone with VSCodroid.
 
 ---
 
@@ -32,7 +32,7 @@ knewa-website/
     css/
         style.css      All colours, fonts and layout
     js/
-        main.js        Footer year and slider settings
+        main.js        Footer year, slider settings, menu shadow, number counters
     images/            Logo and photos go here
     README.md          This file
 ```
@@ -73,6 +73,15 @@ Before going live, check:
 - [ ] Email address, phone numbers and postal address
 - [ ] Social media links in the footer (currently `#`)
 - [ ] Logo and photos
+
+### Theme
+
+- **Colours:** deep forest green, warm gold and cream (with a thin Kenyan-flag stripe above the footer). All set in `:root` at the top of `css/style.css`.
+- **Fonts:** Playfair Display for headings, DM Sans for body text (Google Fonts).
+- **Accent word:** wrap one word of a heading in `<em>` to show it in gold italics, e.g. `<h2>Our <em>story</em></h2>`.
+- **Eyebrow:** the small gold line above a heading is `<p class="eyebrow">Text</p>`.
+- **Icons:** `<i class="bi bi-heart-fill"></i>`. Browse names at icons.getbootstrap.com.
+- **Home page numbers:** `data-count="12"` makes the number count up when it scrolls into view.
 
 ### Common tasks
 

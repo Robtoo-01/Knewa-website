@@ -10,11 +10,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Public+Sans:wght@400;600&display=swap">
+          href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap">
 
-    <!-- Bootstrap, then our own styles -->
+    <!-- Bootstrap and icons, then our own styles -->
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -52,15 +54,11 @@
 <!-- ===================== PAGE BANNER ===================== -->
 <header class="page-hero">
     <div class="container">
-        <p class="hero-place">About KNEWA</p>
-        <h1>A Kenyan family in the New England region</h1>
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span>About</nav>
+        <p class="eyebrow">About KNEWA</p>
+        <h1>A Kenyan <em>family</em> in New England</h1>
         <p class="hero-lead">Kenyans in New England Welfare Association Inc is a not-for-profit, non-political community association for Kenyans living in or connected with the New England region of NSW.</p>
     </div>
-    <svg class="hills" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
-        <path d="M0,80 C120,40 220,70 320,55 C430,38 520,10 640,30 C760,50 820,85 950,70
-                 C1070,56 1150,20 1270,35 C1350,45 1400,60 1440,55 L1440,120 L0,120 Z"/>
-    </svg>
-    <div class="kikoi" aria-hidden="true"></div>
 </header>
 
 <main>
@@ -68,7 +66,8 @@
     <div class="container">
         <div class="row g-4 g-lg-5">
             <div class="col-lg-7 prose">
-                <h2 class="section-title">Our story</h2>
+                <p class="eyebrow">How it began</p>
+                <h2 class="section-title">Our <em>story</em></h2>
                 <p>KNEWA began at a founding meeting at 12 Porter Street, East Tamworth, where twelve members of
                    the local Kenyan community came together with one shared commitment: to establish a welfare
                    association for Kenyans living in the New England region. They unanimously resolved to form
@@ -110,7 +109,8 @@
     <div class="container">
         <div class="row g-4 g-lg-5 align-items-center">
             <div class="col-lg-5">
-                <h2 class="section-title">Mission and vision</h2>
+                <p class="eyebrow">Our founding promise</p>
+                <h2 class="section-title">Mission and <em>vision</em></h2>
                 <blockquote class="promise-quote">
                     <p>A united, inclusive and thriving Kenyan community that supports one another and contributes positively to Australian society.</p>
                 </blockquote>
@@ -119,12 +119,12 @@
                 <p><strong>Our mission</strong> is to promote the welfare, unity and empowerment of Kenyans in the New England
                    region through mutual support, community engagement, cultural preservation and collaboration.</p>
                 <p><strong>Our values</strong> guide everything we do:</p>
-                <ul class="values">
-                    <li><span class="sw">Umoja</span><span class="en">Unity</span><span class="desc">One community across every town and background.</span></li>
-                    <li><span class="sw">Upendo</span><span class="en">Care</span><span class="desc">We look out for one another, especially when it's hard.</span></li>
-                    <li><span class="sw">Heshima</span><span class="en">Respect</span><span class="desc">For every member, elder, culture and neighbour.</span></li>
-                    <li><span class="sw">Uaminifu</span><span class="en">Integrity</span><span class="desc">Open, accountable handling of members' contributions.</span></li>
-                </ul>
+                <div class="row g-3">
+                    <div class="col-sm-6"><div class="value-card"><span class="value-icon" aria-hidden="true"><i class="bi bi-people-fill"></i></span><h3>Umoja</h3><p class="value-en">Unity</p><p>One community across every town and background.</p></div></div>
+                    <div class="col-sm-6"><div class="value-card"><span class="value-icon" aria-hidden="true"><i class="bi bi-heart-fill"></i></span><h3>Upendo</h3><p class="value-en">Care</p><p>We look out for one another, especially when it's hard.</p></div></div>
+                    <div class="col-sm-6"><div class="value-card"><span class="value-icon" aria-hidden="true"><i class="bi bi-hand-thumbs-up-fill"></i></span><h3>Heshima</h3><p class="value-en">Respect</p><p>For every member, elder, culture and neighbour.</p></div></div>
+                    <div class="col-sm-6"><div class="value-card"><span class="value-icon" aria-hidden="true"><i class="bi bi-shield-check"></i></span><h3>Uaminifu</h3><p class="value-en">Integrity</p><p>Open, accountable handling of members' contributions.</p></div></div>
+                </div>
             </div>
         </div>
     </div>
@@ -132,7 +132,8 @@
 
 <section class="section">
     <div class="container">
-        <h2 class="section-title">Our committee</h2>
+        <p class="eyebrow">Who leads us</p>
+        <h2 class="section-title">Our <em>committee</em></h2>
         <p class="lead-narrow">Our interim committee serves voluntarily until the first Annual General Meeting,
            when members will elect the committee for a one-year term.</p>
         <!-- UPDATE after each election. To add photos, put an <img> inside each .person -->
@@ -158,13 +159,14 @@
 
 <!-- ===================== CALL TO ACTION ===================== -->
 <section class="cta">
-    <div class="kikoi kikoi-top" aria-hidden="true"></div>
     <div class="container text-center">
-        <h2>Be part of the story</h2>
+        <p class="eyebrow">Take the first step</p>
+        <h2>Be part of the <em>story</em></h2>
         <p>KNEWA is new, and every member who joins now helps shape what it becomes.</p>
         <div class="cta-actions">
             <a href="membership.html" class="btn btn-gold btn-lg">Become a member</a>
-            <a href="contact.html" class="btn btn-ghost btn-lg">Ask us a question</a>
+            <span class="cta-or">or</span>
+            <a href="contact.html" class="cta-link">Ask us a question</a>
         </div>
     </div>
 </section>
@@ -187,22 +189,23 @@
                     <li><a href="events.html">Events</a></li>
                     <li><a href="welfare.html">Welfare support</a></li>
                     <li><a href="membership.html">Membership</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="col-6 col-md-4">
                 <p class="footer-head">Get in touch</p>
                 <ul class="footer-links">
                     <!-- UPDATE with KNEWA's real contact details -->
-                    <li><a href="mailto:secretary@kenewa.org">secretary@kenewa.org</a></li>
-                    <li>Tamworth, NSW</li>
-                    <li><a href="contact.html">Contact form</a></li>
+                    <li><i class="bi bi-envelope" aria-hidden="true"></i><a href="mailto:secretary@kenewa.org">secretary@kenewa.org</a></li>
+                    <li><i class="bi bi-geo-alt" aria-hidden="true"></i>Tamworth, NSW</li>
+                    <li><i class="bi bi-chat-dots" aria-hidden="true"></i><a href="contact.html">Contact form</a></li>
                 </ul>
                 <!-- UPDATE: paste the links to KNEWA's pages in place of each # -->
                 <ul class="social">
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">TikTok</a></li>
-                    <li><a href="#">WhatsApp</a></li>
+                    <li><a href="#" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#" aria-label="TikTok"><i class="bi bi-tiktok" aria-hidden="true"></i></a></li>
+                    <li><a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
         </div>
