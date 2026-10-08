@@ -970,3 +970,15 @@ grant execute on function public.is_welfare_member(),
                         public.cast_vote(bigint, bigint), public.poll_results(bigint), public.poll_turnout(bigint),
                         public.can_export_members(), public.export_request(text), public.export_members(bigint)
   to authenticated;
+
+-- =====================================================================
+-- Included from welfare-update.sql (welfare application details on support requests)
+-- =====================================================================
+alter table public.support_requests
+  add column if not exists person_affected   text,
+  add column if not exists amount_requested  numeric(10,2),
+  add column if not exists insurance_details text;
+
+alter table public.support_requests drop constraint if exists support_amount_ok;
+alter table public.support_requests add constraint support_amount_ok
+  check (amount_requested is null or (amount_requested >= 0 and amount_requested <= 20000));

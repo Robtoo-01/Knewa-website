@@ -660,6 +660,14 @@ function addFiles(list) {
     renderChosen();
     showMsg(msg, problems.join(". "), problems.length ? "warn" : "");
 }
+// Welfare fund details (form W1) show for bereavement, illness and hardship requests
+const WELFARE_TYPES = ["Bereavement", "Illness, injury or hospital", "Financial hardship or emergency"];
+document.getElementById("support-form").addEventListener("change", e => {
+    if (e.target.name !== "support_type") return;
+    const welfareType = WELFARE_TYPES.includes(e.target.value);
+    document.querySelector(".welfare-fields").hidden = !welfareType;
+    document.querySelector(".bereave-note").hidden = e.target.value !== "Bereavement";
+});
 const fileInput = document.getElementById("s-files");
 fileInput.addEventListener("change", () => { addFiles(fileInput.files); fileInput.value = ""; });
 const zone = document.getElementById("dropzone");
@@ -721,11 +729,28 @@ document.getElementById("support-form").addEventListener("submit", async e => {
     btn.disabled = true;
     try {
         const attachments = await uploadEvidence();
-        const { error } = await db.from("support_requests").insert({
+        const row = {
             member_id: user.id, support_type: f.support_type.value, urgency: f.urgency.value,
             message: f.message.value.trim(), preferred_contact: f.preferred_contact.value, best_time: f.best_time.value.trim(),
             attachments
-        });
+        };
+        // welfare fund details (only when the member filled them in)
+        const welfareType = WELFARE_TYPES.includes(f.support_type.value);
+        const who = [f.person_affected.value, f.person_name.value.trim()].filter(Boolean).join(": ");
+        const extra = welfareType ? {
+            person_affected: who || null,
+            amount_requested: f.amount_requested.value ? Number(f.amount_requested.value) : null,
+            insurance_details: f.insurance_details.value.trim() || null
+        } : {};
+        let { error } = await db.from("support_requests").insert(Object.assign({}, row, extra));
+        // database not updated yet (supabase/welfare-update.sql not run)? Put the details in the message instead
+        if (error && /person_affected|amount_requested|insurance_details/.test(error.message)) {
+            const lines = [extra.person_affected && "For: " + extra.person_affected,
+                           extra.amount_requested != null && "Amount asked for: $" + extra.amount_requested,
+                           extra.insurance_details && "Insurance or other help: " + extra.insurance_details].filter(Boolean);
+            row.message = row.message + (lines.length ? "\n\n" + lines.join("\n") : "");
+            ({ error } = await db.from("support_requests").insert(row));
+        }
         if (error) throw new Error("Could not send: " + error.message);
     } catch (err) {
         btn.disabled = false; document.getElementById("upload-progress").textContent = "";
@@ -733,6 +758,7 @@ document.getElementById("support-form").addEventListener("submit", async e => {
     }
     btn.disabled = false;
     e.target.reset(); chosen = []; renderChosen();
+    document.querySelector(".welfare-fields").hidden = true;
     await loadAll(); show("support");
     showMsg(msg, urgent
         ? `Your request has been sent. Because it's urgent, please also call us now on ${KNEWA_CONTACT.phoneDisplay}.`

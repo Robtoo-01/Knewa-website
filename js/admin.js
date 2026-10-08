@@ -157,6 +157,10 @@ function renderRequests() {
                 ${pill(r.status, REQUEST_LABEL[r.status])}
             </div>
             <p style="white-space:pre-wrap">${esc(r.message)}</p>
+            ${r.person_affected || r.amount_requested != null || r.insurance_details ? `<div class="detail-grid mb-3">
+                ${r.person_affected ? `<div><span>Support is for</span>${esc(r.person_affected)}</div>` : ""}
+                ${r.amount_requested != null ? `<div><span>Amount asked for</span>${money(r.amount_requested)}</div>` : ""}
+                ${r.insurance_details ? `<div><span>Insurance or other help</span>${esc(r.insurance_details)}</div>` : ""}</div>` : ""}
             ${(r.attachments || []).length ? `<div class="attach-box"><strong>Documents attached:</strong><ul class="attach-list">${r.attachments.map(a =>
                 `<li><button type="button" class="btn btn-link btn-sm p-0" data-openfile="${esc(a.path)}">${esc(a.name || "Document")}</button>
                  <span class="note m-0">${a.size ? Math.max(1, Math.round(a.size / 1024)) + " KB" : ""}</span></li>`).join("")}</ul></div>` : ""}

@@ -29,6 +29,7 @@ This is a simple static website: plain HTML and CSS with [Bootstrap 5](https://g
 | `contact.html` | Contact form and other ways to reach us |
 | `thank-you.html` | Shown after someone sends a form |
 | `privacy.html` | Privacy policy |
+| `child-safe.html` | Child safety: our commitment, Working With Children Checks, how to raise a concern. Linked from every footer, Resources, Portfolios and Get help |
 | `credits.html` | Photo credits for the Unsplash photos |
 | `sitemap.xml`, `robots.txt` | Help Google find the public pages. Add new public pages to `sitemap.xml` |
 
@@ -57,9 +58,11 @@ knewa-website/
         members-update.sql  One-off update: documents, Excel export, WhatsApp link (see below)
         member-emails.sql   Automatic emails when members register and are approved
         portal-update.sql   One-off update: type choice, welfare services, online voting, documents, Secretary export
+        welfare-update.sql  One-off update: welfare application details on support requests (who for, amount, insurance)
     docs/
         kenewa-constitution.pdf        The constitution (linked from About, Membership and the members area)
         kenewa-welfare-fund-policy.pdf The Welfare Fund Policy (linked from Welfare). If the committee changes the support limits, update the table on welfare.html too
+        kenewa-child-safe-policy.pdf   ADD once the Committee adopts it, then uncomment the link on child-safe.html
     images/
         logo.svg / logo.png            Full logo with name (documents, flyers, social media)
         logo-mark.svg / logo-mark.png  Round symbol only (menu, profile pictures)
@@ -235,6 +238,14 @@ If your database was set up before this update, run **`supabase/portal-update.sq
    on conflict (user_id) do update set role = 'Secretary';
    ```
 
+### October 2026 update, part 3: welfare applications, bereavement and child safety
+
+If your database was set up before this update, run **`supabase/welfare-update.sql`** once (SQL Editor > New query > paste > Run). It is safe to run again.
+
+1. **Welfare application details.** When a member asks for bereavement, illness or hardship support in the members area, they can now say who the support is for, the amount they need and any insurance or other help that may pay (the same as paper form W1). The committee sees these details on each support request. If the update hasn't been run yet, the details are added to the message instead, so nothing breaks.
+2. **Welfare page.** New section "If someone passes away" (`welfare.html#bereavement`). Two sections are written but hidden in comments until they are approved: "When a big claim comes in" (after the Committee adopts Welfare Fund Policy Amendment No. 1) and the Special Welfare Levy paragraph (after members approve it at a General Meeting). The levy also has hidden lines on `membership.html` and in the members area Payments list. Search for `UPDATE` to find them.
+3. **Child safety page** (`child-safe.html`), with the NSW Child Protection Helpline added to Get help and Resources. Add the Child Safe Policy PDF and uncomment its link once the Committee adopts it.
+
 ### Emails from info@kenewa.org
 
 All member emails come from **KENEWA &lt;info@kenewa.org&gt;**, sent through [Resend](https://resend.com) (free plan).
@@ -290,7 +301,8 @@ Stripe's standard fee for Australian cards was 1.7% + 30c per payment in 2026 (a
 - **Urgent help:** the database doesn't alert anyone when a request arrives. Check the committee area regularly, and keep committee phone numbers on `support.html` for emergencies.
 - **Emails:** Supabase's built-in email is limited to a small number per hour. Set up Resend as described in "Emails from info@kenewa.org" before launching to all members.
 - **Free plan pauses:** a free project that goes unused for about a week can be paused. Restore it from the Supabase dashboard.
-- **Backups:** export the members list regularly (Table Editor > profiles > Export to CSV) and store it securely.
+- **Backups:** the free plan has no automatic backups. Once a month, and before any change to the members system, run `supabase db dump` (Supabase CLI) and save the file to KENEWA's private drive. Record it in the backup log on form IT4. Every 6 months, restore the latest dump into a test project to prove it works. See the Digital Operations and Backup Procedure.
+- **Pausing:** in quiet periods, a committee admin should log in to the Supabase dashboard at least weekly so the project isn't paused.
 
 ---
 
