@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members area | KENEWA</title>
+    <link rel="icon" type="image/svg+xml" href="images/logo-mark.svg">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <meta name="robots" content="noindex">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/portal.css">
+</head>
+<body class="app">
+
+<!-- Icons used on this page -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+        <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5M5.5 9.5V20h5v-6h3v6h5V9.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+        <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 21c1-4.5 4.3-7 8-7s7 2.5 8 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+        <symbol id="i-family" viewBox="0 0 24 24"><circle cx="8" cy="7.5" r="3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17" cy="9" r="2.4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M2.5 20c.6-3.8 2.8-6 5.5-6s4.9 2.2 5.5 6M14 20c.3-2.7 1.6-4.6 3-4.6s3.6 1.4 4.2 4.6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+        <symbol id="i-card" viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M2.5 10h19M6.5 15h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+        <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m5.6 5.6 3.9 3.9m5 5 3.9 3.9m0-12.8-3.9 3.9m-5 5-3.9 3.9" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+        <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2H4.5zM10 21h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+        <symbol id="i-chat" viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 8.5c0 3.3 3.2 6.5 6.5 6.5l1-1.8-2-1-.9.9c-1.2-.4-2.3-1.5-2.7-2.7l.9-.9-1-2z" fill="currentColor"/></symbol>
+        <symbol id="i-clip" viewBox="0 0 24 24"><path d="m20 11.5-8.1 8.1a5 5 0 0 1-7.1-7.1l8.5-8.5a3.3 3.3 0 0 1 4.7 4.7L9.6 17.1a1.7 1.7 0 0 1-2.4-2.4l7.8-7.8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+        <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+        <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+        <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.2 7.5 9.5 4.3-1.3 7.5-4.9 7.5-9.5V6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+        <symbol id="i-out" viewBox="0 0 24 24"><path d="M14 4h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-4M10 16l-4-4 4-4M6 12h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+        <symbol id="i-vote" viewBox="0 0 24 24"><path d="M4 13h16v7H4zM8 13l3-3 5-5 3 3-6 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><path d="M8 17h8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+        <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+        <symbol id="i-idcard" viewBox="0 0 24 24"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="8.5" cy="11" r="2.3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5.5 16.5c.6-1.6 1.7-2.4 3-2.4s2.4.8 3 2.4M14 9.5h4.5M14 13h4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+        <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z M14 3v4h4M9 12h6M9 16h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+        <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+        <symbol id="i-coins" viewBox="0 0 24 24"><ellipse cx="9" cy="7" rx="6" ry="2.6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 7v5c0 1.4 2.7 2.6 6 2.6s6-1.2 6-2.6V7M9 14.6V17c0 1.4 2.7 2.6 6 2.6s6-1.2 6-2.6v-5c0-1.4-2.7-2.6-6-2.6" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+        <symbol id="i-grad" viewBox="0 0 24 24"><path d="M2 9.5 12 5l10 4.5-10 4.5zM6 11.5V16c0 1.4 2.7 3 6 3s6-1.6 6-3v-4.5M22 9.5V15" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+        <symbol id="i-store" viewBox="0 0 24 24"><path d="M4 9.5 5.5 4h13L20 9.5M4 9.5h16v.5a2.7 2.7 0 0 1-5.3 0 2.7 2.7 0 0 1-5.4 0A2.7 2.7 0 0 1 4 10zM5.5 13v7h13v-7M10 20v-4h4v4" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+        <symbol id="i-tag" viewBox="0 0 24 24"><path d="M3 12V4h8l10 10-8 8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="7.5" cy="8.5" r="1.5" fill="currentColor"/></symbol>
+        <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    </defs>
+</svg>
+
+<header class="app-top">
+    <div class="app-top-inner">
+        <a class="brand" href="index.html" aria-label="KENEWA website">
+            <img src="images/logo-mark.svg" alt="" class="brand-logo" width="40" height="40">
+            <span><span class="brand-name">KENEWA</span><span class="brand-sub">Members area</span></span>
+        </a>
+        <div class="app-top-actions">
+            <a class="top-icon top-whatsapp" id="top-whatsapp" href="#" target="_blank" rel="noopener" hidden
+               title="Join our WhatsApp group: KENEWA Members">
+                <svg width="22" height="22"><use href="#i-chat"/></svg><span class="d-none d-md-inline">WhatsApp group</span>
+            </a>
+            <button class="top-icon" data-go="notifications" aria-label="Notifications">
+                <svg width="22" height="22"><use href="#i-bell"/></svg><span class="count" id="top-count" hidden></span>
+            </button>
+            <a href="admin.html" class="btn btn-outline-ink btn-sm" id="committee-link" hidden>Committee</a>
+            <span class="avatar" id="user-initials" aria-hidden="true"></span>
+            <span class="d-none d-lg-inline fw-semibold" id="user-name"></span>
+            <button class="btn btn-outline-ink btn-sm" id="logout"><svg width="16" height="16" aria-hidden="true"><use href="#i-out"/></svg> Sign out</button>
+        </div>
+    </div>
+</header>
+
+<div class="app-shell">
+    <nav class="side" aria-label="Members menu">
+        <p class="side-label">Overview</p>
+        <button data-view="dashboard" class="on"><svg width="20" height="20" aria-hidden="true"><use href="#i-home"/></svg>Dashboard</button>
+        <p class="side-label">My membership</p>
+        <button data-view="registration"><svg width="20" height="20" aria-hidden="true"><use href="#i-user"/></svg>My details</button>
+        <button data-view="family"><svg width="20" height="20" aria-hidden="true"><use href="#i-family"/></svg>My family</button>
+        <button data-view="payments"><svg width="20" height="20" aria-hidden="true"><use href="#i-card"/></svg>Payments</button>
+        <button data-view="services"><svg width="20" height="20" aria-hidden="true"><use href="#i-star"/></svg>Member services <svg class="side-lock" id="side-lock" width="15" height="15" aria-label="Locked" hidden><use href="#i-lock"/></svg></button>
+        <p class="side-label">Help and news</p>
+        <button data-view="support"><svg width="20" height="20" aria-hidden="true"><use href="#i-help"/></svg>Get support</button>
+        <button data-view="notifications"><svg width="20" height="20" aria-hidden="true"><use href="#i-bell"/></svg>Notifications <span class="count" id="note-count" hidden></span></button>
+        <div class="side-help">
+            <p class="mb-2"><strong>Urgent?</strong> Call us any time.</p>
+            <a href="tel:+61475140471" class="btn btn-help w-100"><svg width="16" height="16" aria-hidden="true"><use href="#i-phone"/></svg> 0475 140 471</a>
+        </div>
+    </nav>
+
+    <main class="app-main">
+        <p class="msg" id="msg" hidden></p>
+
+        <!-- ================= FIRST STEP: CHOOSE MEMBERSHIP TYPE ================= -->
+        <section class="view" id="view-choose" hidden>
+            <div class="choose-head">
+                <p class="welcome-hi" id="choose-hello">Karibu!</p>
+                <h1>Which membership would you like?</h1>
+                <p class="note mt-0">This decides what you can use in the members area. You can change it later in <strong>My details</strong>.</p>
+            </div>
+            <div class="choose-grid">
+                <button type="button" class="choose-card choose-featured" data-choose="financial">
+                    <span class="choose-badge">Includes welfare cover</span>
+                    <span class="choose-price">$200 <small>to join</small></span>
+                    <span class="choose-title">Welfare (financial) member</span>
+                    <ul>
+                        <li>Welfare fund support for you and your registered family: bereavement, illness, hardship</li>
+                        <li>Vote online in elections and decisions</li>
+                        <li>Digital membership card and members' documents</li>
+                        <li>Everything in community membership</li>
+                    </ul>
+                    <span class="choose-note">Welfare services unlock once the Treasurer confirms your $200 joining fees.</span>
+                    <span class="btn btn-gold btn-lg w-100">Choose welfare membership</span>
+                </button>
+                <button type="button" class="choose-card" data-choose="community">
+                    <span class="choose-price">Free</span>
+                    <span class="choose-title">Community member</span>
+                    <ul>
+                        <li>News, notices and the members' WhatsApp group</li>
+                        <li>Invitations to every KENEWA event</li>
+                        <li>Ask the committee for support and advice</li>
+                    </ul>
+                    <span class="choose-note">No voting rights or welfare fund cover. You can upgrade at any time.</span>
+                    <span class="btn btn-outline-ink btn-lg w-100">Choose community membership</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- ================= MEMBER SERVICES ================= -->
+        <section class="view" id="view-services" hidden>
+            <h1>Member services</h1>
+            <div id="svc-state"></div>
+            <div class="svc-grid" id="svc-grid"></div>
+        </section>
+
+        <!-- ================= DASHBOARD ================= -->
+        <section class="view" id="view-dashboard">
+            <div class="welcome">
+                <div class="welcome-text">
+                    <p class="welcome-hi" id="hello">Habari</p>
+                    <p class="welcome-sub" id="welcome-sub">Welcome to your KENEWA members area.</p>
+                    <div class="welcome-meta">
+                        <span id="welcome-number">Member no. not yet given</span>
+                        <span id="welcome-status"></span>
+                    </div>
+                </div>
+                <div class="welcome-progress">
+                    <div class="progress-ring" id="progress-ring" style="--p: 0">
+                        <span id="progress-num">0%</span>
+                    </div>
+                    <div>
+                        <p class="mb-1 fw-semibold" id="progress-text">Getting started</p>
+                        <button class="btn btn-light btn-sm" id="next-step" hidden>Next step</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stat-grid">
+                <button class="stat" data-go="registration"><span class="stat-icon"><svg width="22" height="22"><use href="#i-user"/></svg></span>
+                    <span class="k">Membership</span><span class="v" id="st-type">-</span></button>
+                <button class="stat" data-go="registration"><span class="stat-icon"><svg width="22" height="22"><use href="#i-shield"/></svg></span>
+                    <span class="k">Status</span><span class="v" id="st-status">-</span></button>
+                <button class="stat" data-go="family"><span class="stat-icon"><svg width="22" height="22"><use href="#i-family"/></svg></span>
+                    <span class="k">Family registered</span><span class="v" id="st-family">-</span></button>
+                <button class="stat" data-go="payments"><span class="stat-icon"><svg width="22" height="22"><use href="#i-card"/></svg></span>
+                    <span class="k">Payments awaiting check</span><span class="v" id="st-owing">-</span></button>
+            </div>
+
+            <!-- WhatsApp group: link appears once the member has registered -->
+            <div class="wa-card" id="wa-card" hidden>
+                <span class="wa-icon"><svg width="30" height="30" aria-hidden="true"><use href="#i-chat"/></svg></span>
+                <div class="wa-text">
+                    <h2>KENEWA Members WhatsApp group</h2>
+                    <p id="wa-text">News, event reminders and quick updates from the committee.</p>
+                </div>
+                <a class="btn btn-whatsapp" id="wa-join" href="#" target="_blank" rel="noopener" hidden>Join the group</a>
+                <button class="btn btn-outline-ink" id="wa-locked" data-go="registration" hidden>Finish registration to unlock</button>
+            </div>
+
+            <!-- Member services: unlocked or locked -->
+            <div id="svc-teaser"></div>
+
+            <div class="quick">
+                <button class="quick-btn" data-go="payments"><svg width="24" height="24" aria-hidden="true"><use href="#i-card"/></svg><span>Pay now</span></button>
+                <button class="quick-btn" data-go="support"><svg width="24" height="24" aria-hidden="true"><use href="#i-help"/></svg><span>Ask for support</span></button>
+                <button class="quick-btn" data-go="family"><svg width="24" height="24" aria-hidden="true"><use href="#i-family"/></svg><span>Update family</span></button>
+                <a class="quick-btn" href="events.html"><svg width="24" height="24" aria-hidden="true"><use href="#i-arrow"/></svg><span>Upcoming events</span></a>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-lg-6">
+                    <div class="panel h-100">
+                        <h2>Your membership steps</h2>
+                        <ul class="steps-check" id="checklist"></ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="panel h-100">
+                        <h2>Latest notifications</h2>
+                        <ul class="notes" id="dash-notes"></ul>
+                        <button class="btn btn-link p-0" data-go="notifications">See all notifications</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= MY DETAILS (REGISTRATION) ================= -->
+        <section class="view" id="view-registration" hidden>
+            <h1>My details</h1>
+            <p class="msg warn" id="reg-locked" hidden>Your registration has been submitted. You can still update your details; the committee will see the changes.</p>
+            <form class="panel" id="reg-form">
+                <h2 class="form-section-title">Membership type</h2>
+                <div class="choice-group choice-cards">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="membership_type" id="mt-fin" value="financial">
+                        <label class="form-check-label" for="mt-fin"><strong>Welfare (financial) member</strong> <span class="d-block note mt-0">$200 to join: voting rights and welfare fund cover</span></label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="membership_type" id="mt-com" value="community">
+                        <label class="form-check-label" for="mt-com"><strong>Community member</strong> <span class="d-block note mt-0">Free: news, events and the WhatsApp group</span></label>
+                    </div>
+                </div>
+
+                <h2 class="form-section-title">Your details</h2>
+                <div class="row g-3">
+                    <div class="col-md-6"><label class="form-label" for="f-first">First name *</label><input class="form-control" id="f-first" name="first_name" required autocomplete="given-name"></div>
+                    <div class="col-md-6"><label class="form-label" for="f-last">Last name *</label><input class="form-control" id="f-last" name="last_name" required autocomplete="family-name"></div>
+                    <div class="col-md-6"><label class="form-label" for="f-dob">Date of birth *</label><input type="date" class="form-control" id="f-dob" name="date_of_birth" required></div>
+                    <div class="col-md-6"><label class="form-label" for="f-gender">Gender</label>
+                        <select class="form-select" id="f-gender" name="gender"><option value="">Prefer not to say</option><option>Female</option><option>Male</option></select></div>
+                    <div class="col-md-6"><label class="form-label" for="f-phone">Mobile *</label><input type="tel" class="form-control" id="f-phone" name="phone" required autocomplete="tel"></div>
+                    <div class="col-md-6"><label class="form-label" for="f-occ">Occupation or field of study</label><input class="form-control" id="f-occ" name="occupation"></div>
+                    <div class="col-12"><label class="form-label" for="f-street">Street address *</label><input class="form-control" id="f-street" name="street_address" required autocomplete="street-address"></div>
+                    <div class="col-md-6"><label class="form-label" for="f-town">Town *</label><input class="form-control" id="f-town" name="town" required placeholder="e.g. Tamworth"></div>
+                    <div class="col-md-6"><label class="form-label" for="f-post">Postcode *</label><input class="form-control" id="f-post" name="postcode" required inputmode="numeric" pattern="[0-9]{4}" maxlength="4"></div>
+                    <div class="col-md-6"><label class="form-label" for="f-county">Home county in Kenya</label><input class="form-control" id="f-county" name="home_county"></div>
+                </div>
+
+                <div class="financial-only">
+                    <h2 class="form-section-title">Parents</h2>
+                    <div class="row g-3">
+                        <div class="col-md-6"><label class="form-label" for="f-father">Father's full name</label><input class="form-control" id="f-father" name="father_name"></div>
+                        <div class="col-md-6"><label class="form-label" for="f-mother">Mother's full name</label><input class="form-control" id="f-mother" name="mother_name"></div>
+                    </div>
+                    <p class="note">Add your spouse, dependants and siblings under <strong>My family</strong> after saving.</p>
+                </div>
+
+                <h2 class="form-section-title">Next of kin</h2>
+                <div class="row g-3">
+                    <div class="col-md-6"><label class="form-label" for="f-nok">Full name *</label><input class="form-control" id="f-nok" name="nok_name" required></div>
+                    <div class="col-md-6"><label class="form-label" for="f-nokrel">Relationship *</label><input class="form-control" id="f-nokrel" name="nok_relationship" required></div>
+                    <div class="col-md-6"><label class="form-label" for="f-nokph">Phone *</label><input type="tel" class="form-control" id="f-nokph" name="nok_phone" required></div>
+                    <div class="col-md-6"><label class="form-label" for="f-nokc">Country they live in *</label><input class="form-control" id="f-nokc" name="nok_country" required></div>
+                </div>
+
+                <h2 class="form-section-title">Declaration</h2>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="f-agree" name="agreed_constitution" required>
+                    <label class="form-check-label" for="f-agree">I support KENEWA's objectives and agree to follow its <a href="docs/kenewa-constitution.pdf" target="_blank" rel="noopener">constitution</a>. *</label>
+                </div>
+                <div class="form-check mt-2">
+                    <input type="checkbox" class="form-check-input" id="f-true" required>
+                    <label class="form-check-label" for="f-true">The information I give is true, and I have permission to share my family members' details, as described in the <a href="privacy.html">Privacy policy</a>. *</label>
+                </div>
+                <button type="submit" class="btn btn-gold btn-lg mt-4" id="reg-submit">Save and submit registration</button>
+            </form>
+        </section>
+
+        <!-- ================= FAMILY ================= -->
+        <section class="view" id="view-family" hidden>
+            <h1>My family</h1>
+            <p class="note mt-0">The welfare fund's cover is based on the family you register here: up to 1 spouse, 7 dependants and 7 siblings.</p>
+            <div class="family-state" id="family-state"></div>
+            <div id="family-panels"></div>
+        </section>
+
+        <!-- ================= PAYMENTS ================= -->
+        <section class="view" id="view-payments" hidden>
+            <h1>Payments</h1>
+
+            <div class="paynow panel">
+                <div class="paynow-head">
+                    <div>
+                        <h2 class="mb-1">Pay now</h2>
+                        <p class="note m-0">Choose what you're paying for, then tap a way to pay.</p>
+                    </div>
+                    <div class="amount-chips" role="group" aria-label="What are you paying for?" id="pay-chips"></div>
+                </div>
+                <div class="pay-options">
+                    <!-- 1. Tap to pay by card / Apple Pay / Google Pay (Stripe Payment Link, set in js/config.js) -->
+                    <div class="pay-option pay-option-card" id="opt-card">
+                        <span class="pay-badge">Fastest</span>
+                        <h3>Card, Apple Pay or Google Pay</h3>
+                        <p class="note mt-0">Opens a secure Stripe payment page with your reference filled in. Small card fee applies.</p>
+                        <a class="btn btn-gold btn-lg w-100" id="card-link" href="#" target="_blank" rel="noopener">Pay <span id="card-amount">$200</span></a>
+                        <p class="note mb-0" id="card-missing" hidden>Card payments are being set up. Please use PayID or bank transfer for now.</p>
+                    </div>
+                    <!-- 2. PayID -->
+                    <div class="pay-option">
+                        <span class="pay-badge pay-badge-free">No fees</span>
+                        <h3>PayID</h3>
+                        <p class="note mt-0">In your banking app choose <strong>Pay to PayID</strong> and paste this:</p>
+                        <div class="copy-row"><span class="copy-val" id="payid-val"></span>
+                            <button class="btn btn-sm btn-outline-ink copy-btn" data-copy="#payid-val"><svg width="15" height="15" aria-hidden="true"><use href="#i-copy"/></svg> Copy</button></div>
+                        <p class="note mb-0">Arrives in seconds with most Australian banks.</p>
+                    </div>
+                    <!-- 3. Bank transfer -->
+                    <div class="pay-option">
+                        <span class="pay-badge pay-badge-free">No fees</span>
+                        <h3>Bank transfer</h3>
+                        <dl class="copy-list">
+                            <div><dt>Account name</dt><dd><span id="acc-name"></span></dd></div>
+                            <div><dt>BSB</dt><dd><span id="bsb-val"></span> <button class="btn btn-link btn-sm p-0 copy-btn" data-copy="#bsb-val">Copy</button></dd></div>
+                            <div><dt>Account</dt><dd><span id="acc-val"></span> <button class="btn btn-link btn-sm p-0 copy-btn" data-copy="#acc-val">Copy</button></dd></div>
+                        </dl>
+                    </div>
+                </div>
+                <div class="pay-ref">
+                    <span><strong>Use this reference:</strong> <span id="pay-ref"></span></span>
+                    <button class="btn btn-sm btn-outline-ink copy-btn" data-copy="#pay-ref"><svg width="15" height="15" aria-hidden="true"><use href="#i-copy"/></svg> Copy</button>
+                </div>
+                <p class="note mb-0">Prefer cash? Pay the Treasurer, <span id="treasurer-name"></span>, and ask for a receipt.</p>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-lg-6">
+                    <div class="panel h-100" id="joining-box">
+                        <h2>Joining fees for welfare members</h2>
+                        <div class="pay-summary">
+                            <div><span>Registration fee</span><span>$30</span></div>
+                            <div><span>Welfare fund contribution</span><span>$170</span></div>
+                            <div class="pay-total"><span>Total</span><span>$200</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="panel h-100">
+                        <h2>Paid by PayID, bank or cash?</h2>
+                        <p class="note mt-0">Tell us here so the Treasurer can match and confirm it.</p>
+                        <form class="row g-2" id="pay-form">
+                            <div class="col-sm-6"><label class="form-label" for="p-purpose">For *</label>
+                                <select class="form-select" id="p-purpose" name="purpose" required>
+                                    <option value="Joining fees" data-amount="200">Joining fees ($200)</option>
+                                    <option value="Welfare appeal">Welfare appeal</option>
+                                    <option value="Membership renewal">Membership renewal</option>
+                                    <option value="Event">Event</option>
+                                    <option value="Donation">Donation</option>
+                                    <option value="Other">Other</option>
+                                </select></div>
+                            <div class="col-sm-6"><label class="form-label" for="p-amount">Amount ($) *</label><input type="number" min="1" step="0.01" class="form-control" id="p-amount" name="amount" value="200" required></div>
+                            <div class="col-sm-6"><label class="form-label" for="p-method">Method *</label>
+                                <select class="form-select" id="p-method" name="method" required><option value="">Choose...</option><option>PayID</option><option>Bank transfer</option><option>Card (payment link)</option><option>Cash to the Treasurer</option></select></div>
+                            <div class="col-sm-6"><label class="form-label" for="p-date">Date paid *</label><input type="date" class="form-control" id="p-date" name="paid_on" required></div>
+                            <div class="col-12"><label class="form-label" for="p-ref">Receipt or reference</label><input class="form-control" id="p-ref" name="reference"></div>
+                            <div class="col-12"><button class="btn btn-gold">Record payment</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="panel mt-3">
+                <h2>Payment history</h2>
+                <div class="table-wrap"><table class="list"><thead><tr><th>Date</th><th>For</th><th>Amount</th><th>Method</th><th>Status</th></tr></thead><tbody id="pay-rows"></tbody></table></div>
+            </div>
+        </section>
+
+        <!-- ================= SUPPORT ================= -->
+        <section class="view" id="view-support" hidden>
+            <h1>Get support</h1>
+            <div class="emergency mb-3"><p class="mb-0"><strong>Emergency? Call 000.</strong> For urgent matters like a death in the family, also call us on <a href="tel:+61475140471">0475 140 471</a>.</p></div>
+            <div class="row g-3">
+                <div class="col-lg-7">
+                    <form class="panel" id="support-form">
+                        <h2>Request support</h2>
+                        <p class="note mt-0">Only the committee members handling your request can see it, and any documents you attach.</p>
+                        <p class="form-label mb-2">Type of support *</p>
+                        <div class="type-tiles" role="radiogroup" aria-label="Type of support">
+                            <label><input type="radio" name="support_type" value="Bereavement" required><span>Bereavement</span></label>
+                            <label><input type="radio" name="support_type" value="Illness, injury or hospital"><span>Illness or hospital</span></label>
+                            <label><input type="radio" name="support_type" value="Financial hardship or emergency"><span>Hardship or emergency</span></label>
+                            <label><input type="radio" name="support_type" value="Settling in (housing, jobs, services)"><span>Settling in</span></label>
+                            <label><input type="radio" name="support_type" value="Wellbeing or mental health"><span>Wellbeing</span></label>
+                            <label><input type="radio" name="support_type" value="Family or relationship concerns"><span>Family concerns</span></label>
+                            <label><input type="radio" name="support_type" value="Student support"><span>Student support</span></label>
+                            <label><input type="radio" name="support_type" value="Something else"><span>Something else</span></label>
+                        </div>
+                        <div class="row g-3 mt-1">
+                            <div class="col-md-6"><label class="form-label" for="s-urg">How urgent? *</label>
+                                <select class="form-select" id="s-urg" name="urgency" required>
+                                    <option value="">Choose...</option><option>Urgent: please call me today</option><option>Soon: within a few days</option><option>Not urgent</option></select></div>
+                            <div class="col-md-6"><label class="form-label" for="s-pref">Best way to reach you</label>
+                                <select class="form-select" id="s-pref" name="preferred_contact"><option>Phone call</option><option>WhatsApp</option><option>SMS</option><option>Email</option></select></div>
+                            <div class="col-12"><label class="form-label" for="s-msg">What's happening and how can we help? *</label><textarea class="form-control" id="s-msg" name="message" rows="5" required></textarea></div>
+                            <div class="col-md-6"><label class="form-label" for="s-time">Best time</label><input class="form-control" id="s-time" name="best_time" placeholder="e.g. after 5 pm"></div>
+
+                            <div class="col-12">
+                                <p class="form-label mb-1">Supporting documents <span class="fw-normal note">(optional)</span></p>
+                                <label class="dropzone" id="dropzone" for="s-files">
+                                    <svg width="26" height="26" aria-hidden="true"><use href="#i-clip"/></svg>
+                                    <span><strong>Tap to attach</strong> or drag files here<br>
+                                    <span class="note">For example a death certificate, hospital letter or bill. Photos, PDF or Word, up to 5 files, 10 MB each.</span></span>
+                                </label>
+                                <input type="file" id="s-files" class="visually-hidden" multiple
+                                       accept="image/jpeg,image/png,image/webp,image/heic,image/heif,application/pdf,.doc,.docx">
+                                <ul class="file-list" id="file-list"></ul>
+                            </div>
+                            <div class="col-12"><button class="btn btn-gold btn-lg" id="support-submit">Send request</button>
+                                <span class="note ms-2" id="upload-progress" aria-live="polite"></span></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-5">
+                    <div class="panel">
+                        <h2>My requests</h2>
+                        <div id="req-list"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= NOTIFICATIONS ================= -->
+        <section class="view" id="view-notifications" hidden>
+            <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
+                <h1 class="mb-0">Notifications</h1>
+                <button class="btn btn-outline-ink btn-sm" id="mark-all">Mark all as read</button>
+            </div>
+            <div class="panel"><ul class="notes" id="all-notes"></ul></div>
+        </section>
+    </main>
+</div>
+
+<!-- Bottom menu on phones -->
+<nav class="tabbar" aria-label="Members menu (phone)">
+    <button data-view="dashboard" class="on"><svg width="22" height="22" aria-hidden="true"><use href="#i-home"/></svg><span>Home</span></button>
+    <button data-view="services"><svg width="22" height="22" aria-hidden="true"><use href="#i-star"/></svg><span>Services</span></button>
+    <button data-view="payments"><svg width="22" height="22" aria-hidden="true"><use href="#i-card"/></svg><span>Pay</span></button>
+    <button data-view="support"><svg width="22" height="22" aria-hidden="true"><use href="#i-help"/></svg><span>Support</span></button>
+    <button data-view="registration"><svg width="22" height="22" aria-hidden="true"><use href="#i-user"/></svg><span>Details</span></button>
+</nav>
+
+<div class="toast-box" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/config.js"></script>
+<script src="js/db.js"></script>
+<script src="js/portal.js"></script>
+</body>
+</html>

@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact us | KENEWA</title>
+    <title>Portfolios | KENEWA</title>
     <link rel="icon" type="image/svg+xml" href="images/logo-mark.svg">
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <meta name="description" content="Get in touch with the KENEWA committee.">
-    <link rel="canonical" href="https://kenewa.org/contact">
+    <meta name="description" content="KENEWA's portfolios: welfare, women's empowerment, students and youth, sport, culture and events, communications, and partnerships.">
+    <link rel="canonical" href="https://kenewa.org/portfolios">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="KENEWA">
-    <meta property="og:title" content="Contact us | KENEWA">
-    <meta property="og:description" content="Get in touch with the KENEWA committee.">
-    <meta property="og:url" content="https://kenewa.org/contact">
+    <meta property="og:title" content="Portfolios | KENEWA">
+    <meta property="og:description" content="KENEWA's portfolios: welfare, women's empowerment, students and youth, sport, culture and events, communications, and partnerships.">
+    <meta property="og:url" content="https://kenewa.org/portfolios">
     <meta property="og:image" content="https://kenewa.org/images/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -58,7 +58,7 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="portfolios.html" role="button"
+                    <a class="nav-link dropdown-toggle active" aria-current="page" href="portfolios.html" role="button"
                        data-bs-toggle="dropdown" aria-expanded="false">Portfolios</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item dropdown-overview" href="portfolios.html">Portfolios: overview</a></li>
@@ -93,7 +93,7 @@
                         <li><a class="dropdown-item" href="resources.html#study">Study and work</a></li>
                     </ul>
                 </li>
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 <li class="nav-item"><a class="nav-link" href="login.html" data-portal-link>Portal</a></li>
                 <li class="nav-item ms-xl-3 nav-btn">
                     <a class="btn btn-help btn-sm" href="support.html">Get help</a>
@@ -105,11 +105,11 @@
 
 <!-- ===================== PAGE BANNER ===================== -->
 <!-- Banner photo from Unsplash (see credits.html). To use your own: images/your-photo.jpg -->
-<header class="page-hero" style="--banner-photo: url('https://images.unsplash.com/photo-1639390763147-31f98d795f2e?auto=format&fit=crop&w=1800&q=70')">
+<header class="page-hero" style="--banner-photo: url('https://images.unsplash.com/photo-1623241461978-668ede250064?auto=format&fit=crop&w=1800&q=70')">
     <div class="container">
-        <p class="hero-place">Contact</p>
-        <h1>Get in touch</h1>
-        <p class="hero-lead">Questions about membership, events or support? Send us a message and a committee member will reply.</p>
+        <p class="hero-place">Portfolios</p>
+        <h1>How KENEWA works for you</h1>
+        <p class="hero-lead">Like a village council, our work is shared: each portfolio is led by a volunteer committee member, and every member is welcome to help.</p>
     </div>
     <div class="flag-stripe" aria-hidden="true"></div>
 </header>
@@ -117,77 +117,142 @@
 <main id="main">
 <section class="section">
     <div class="container">
-        <div class="row g-4 g-lg-5">
-            <div class="col-lg-7">
-                <div class="form-card">
-                    <h2 class="h3 mb-3">Send a message</h2>
-                    <form name="contact" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field">
-                        <p class="d-none"><label>Leave this empty: <input name="bot-field"></label></p>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <label for="c-name" class="form-label">Your name</label>
-                                <input type="text" id="c-name" name="name" class="form-control" required autocomplete="name">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="c-email" class="form-label">Email</label>
-                                <input type="email" id="c-email" name="email" class="form-control" required autocomplete="email">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="c-phone" class="form-label">Phone (optional)</label>
-                                <input type="tel" id="c-phone" name="phone" class="form-control" autocomplete="tel">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="c-topic" class="form-label">What is it about?</label>
-                                <select id="c-topic" name="topic" class="form-select">
-                                    <option>General enquiry</option>
-                                    <option>Membership</option>
-                                    <option>Welfare support</option>
-                                    <option>Events</option>
-                                    <option>Partnership or sponsorship</option>
-                                    <option>Hosting or suggesting an event</option>
-                                    <option>Volunteering</option>
-                                    <option>Women's empowerment</option>
-                                    <option>Students and youth</option>
-                                    <option>Sport and wellbeing</option>
-                                    <option>Donation</option>
-                                    <option>Photos</option>
-                                </select>
-                            </div>
-                            <div class="col-12">
-                                <label for="c-message" class="form-label">Message</label>
-                                <textarea id="c-message" name="message" rows="6" class="form-control" required></textarea>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-check">
-                                    <input type="checkbox" id="c-privacy" name="privacy-consent" class="form-check-input" required>
-                                    <label for="c-privacy" class="form-check-label">I agree to KENEWA using these details to reply to me, as described in the <a href="privacy.html">Privacy policy</a>.</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <button type="submit" class="btn btn-gold btn-lg">Send message</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+        <div class="row g-4 portfolios">
+            <div class="col-md-6 col-lg-4">
+                <article class="portfolio" id="welfare">
+                    <h2>Welfare</h2>
+                    <p class="portfolio-lead">The committee, with the welfare fund managed by Treasurer Hillary Bett</p>
+                    <ul class="tick-list">
+                        <li>Support for members in bereavement, including funeral and repatriation costs</li>
+                        <li>Visits, meals and transport during illness or hospital stays</li>
+                        <li>Help after sudden hardship, and links to local services</li>
+                    </ul>
+                    <a href="support.html" class="btn btn-outline-ink">Ask for support</a>
+                </article>
             </div>
-            <div class="col-lg-5">
-                <aside class="fact-panel">
-                    <h2 class="h4">Other ways to reach us</h2>
-                    <dl>
-                        <dt>Email</dt><dd><a href="mailto:info@kenewa.org">info@kenewa.org</a></dd>
-                        <dt>Phone</dt><dd><a href="tel:+61475140471">0475 140 471</a> (call, text or <a href="https://wa.me/61475140471" target="_blank" rel="noopener">WhatsApp</a>)</dd>
-                        <dt>Secretary</dt><dd>Michael Kiplangat</dd>
-                        <dt>Based in</dt><dd>Tamworth, NSW</dd>
-                        <dt>Area we serve</dt><dd>Tamworth, Armidale, Gunnedah, Inverell, Glen Innes, Moree and surrounding New England towns</dd>
-                        <dt>Postal address</dt><dd>6A Edinburg Avenue, West Tamworth NSW 2340</dd>
-                        <dt>Social media</dt><dd><a href="https://www.facebook.com/profile.php?id=61593756848950" target="_blank" rel="noopener">KENEWA on Facebook</a> and <a href="https://wa.me/61475140471" target="_blank" rel="noopener">WhatsApp</a>. Members get the members' WhatsApp group link in the <a href="login.html">members portal</a>.</dd>
-                    </dl>
-                    <p class="note mb-0">For urgent welfare matters, call us on <a href="tel:+61475140471">0475 140 471</a>. In an emergency, call 000.</p>
-                </aside>
+            <div class="col-md-6 col-lg-4">
+                <article class="portfolio" id="women">
+                    <h2>Women's empowerment</h2>
+                    <p class="portfolio-lead">Janet Bett, Women's Empowerment</p>
+                    <ul class="tick-list">
+                        <li>A welcoming network for women across the region</li>
+                        <li>Savings and investment circles in the <span lang="sw">chama</span> tradition</li>
+                        <li>Mentoring, wellbeing and leadership opportunities</li>
+                    </ul>
+                    <a href="contact.html?topic=Women%27s%20empowerment" class="btn btn-outline-ink">Join the women's network</a>
+                </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <article class="portfolio" id="youth">
+                    <h2>Students and youth</h2>
+                    <p class="portfolio-lead">Ruth Tanui, Student Representative</p>
+                    <ul class="tick-list">
+                        <li>Orientation and a friendly face for international students</li>
+                        <li>Mentoring and role models for young Kenyan-Australians</li>
+                        <li>A voice for young people on the committee</li>
+                    </ul>
+                    <a href="contact.html?topic=Students%20and%20youth" class="btn btn-outline-ink">Get involved</a>
+                </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <article class="portfolio" id="sport">
+                    <h2>Sport and wellbeing</h2>
+                    <p class="portfolio-lead">Sheldon Kipkemboi, Sport</p>
+                    <ul class="tick-list">
+                        <li>Sports days and friendly matches for all ages and abilities</li>
+                        <li>Walking, running and fitness groups</li>
+                        <li>Mental health and wellbeing sessions</li>
+                    </ul>
+                    <a href="contact.html?topic=Sport%20and%20wellbeing" class="btn btn-outline-ink">Play with us</a>
+                </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <article class="portfolio" id="culture">
+                    <h2>Culture and events</h2>
+                    <p class="portfolio-lead">Geoffrey Seurei, Organising Secretary</p>
+                    <ul class="tick-list">
+                        <li>Kenya's national days: Madaraka, Mashujaa and Jamhuri</li>
+                        <li>Stalls and performances at Tamworth's Fiesta La Peel and Harmony Week</li>
+                        <li>Keeping our languages, food and music alive for our children</li>
+                    </ul>
+                    <a href="events.html" class="btn btn-outline-ink">See events</a>
+                </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <article class="portfolio" id="communications">
+                    <h2>Communications and IT</h2>
+                    <p class="portfolio-lead">Evans Yego, IT and Communications</p>
+                    <ul class="tick-list">
+                        <li>This website and the members portal</li>
+                        <li>Our Facebook page and the members' WhatsApp group</li>
+                        <li>Member notices and newsletters</li>
+                    </ul>
+                    <a href="contact.html?topic=General%20enquiry" class="btn btn-outline-ink">Contact the team</a>
+                </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <article class="portfolio" id="partnerships">
+                    <h2>Partnerships and grants</h2>
+                    <p class="portfolio-lead">Edwin Ng’etich, Chairperson</p>
+                    <ul class="tick-list">
+                        <li>Working with councils, services and multicultural organisations</li>
+                        <li>Applying for community grants to grow our programs</li>
+                        <li>Sponsorship from businesses that share our values</li>
+                    </ul>
+                    <a href="contact.html?topic=Partnership%20or%20sponsorship" class="btn btn-outline-ink">Partner with us</a>
+                </article>
             </div>
         </div>
     </div>
 </section>
+
+<section class="section section-soft">
+    <div class="container text-center">
+        <h2 class="section-title">Have a skill to share?</h2>
+        <p class="lead-narrow mx-auto">Every portfolio welcomes volunteers, whether you can give an hour a year or lead a project.
+           Tell us what you'd like to help with.</p>
+        <a href="contact.html?topic=Volunteering" class="btn btn-gold btn-lg">Volunteer with KENEWA</a>
+    </div>
+</section>
+
+<!-- ===================== TWO WAYS TO JOIN ===================== -->
+<section class="section join-paths" id="ways">
+    <div class="container">
+        <div class="section-head text-center">
+            <h2 class="section-title">Wish to become a member?</h2>
+            <p class="lead-narrow mx-auto">Choose the membership that suits you. Both start with a free members portal account.</p>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-5">
+                <article class="path-card">
+                    <p class="path-price">Free</p>
+                    <h3>Community membership</h3>
+                    <p>For Kenyans, their families and friends of our community who want to stay connected.</p>
+                    <ul class="tick-list">
+                        <li>News, notices and the members' WhatsApp group</li>
+                        <li>Invitations to every KENEWA event</li>
+                        <li>Access to the members portal</li>
+                    </ul>
+                    <a href="login.html#signup" class="btn btn-outline-ink btn-lg">Join for free</a>
+                </article>
+            </div>
+            <div class="col-md-6 col-lg-5">
+                <article class="path-card path-featured">
+                    <p class="path-price">$200 <span>to join</span></p>
+                    <h3>Welfare membership</h3>
+                    <p>Financial membership with welfare fund cover for you and your registered family.</p>
+                    <ul class="tick-list">
+                        <li>Support in bereavement, illness and hardship</li>
+                        <li>A vote at general meetings and a say in the welfare fund</li>
+                        <li>Everything in community membership</li>
+                    </ul>
+                    <a href="membership.html" class="btn btn-gold btn-lg">Become a welfare member</a>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
 </main>
 
 <!-- ===================== FOOTER ===================== -->

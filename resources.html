@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact us | KENEWA</title>
+    <title>Community resources | KENEWA</title>
     <link rel="icon" type="image/svg+xml" href="images/logo-mark.svg">
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <meta name="description" content="Get in touch with the KENEWA committee.">
-    <link rel="canonical" href="https://kenewa.org/contact">
+    <meta name="description" content="Trusted links for settling in, visas, health, safety, study and work in New England, NSW.">
+    <link rel="canonical" href="https://kenewa.org/resources">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="KENEWA">
-    <meta property="og:title" content="Contact us | KENEWA">
-    <meta property="og:description" content="Get in touch with the KENEWA committee.">
-    <meta property="og:url" content="https://kenewa.org/contact">
+    <meta property="og:title" content="Community resources | KENEWA">
+    <meta property="og:description" content="Trusted links for settling in, visas, health, safety, study and work in New England, NSW.">
+    <meta property="og:url" content="https://kenewa.org/resources">
     <meta property="og:image" content="https://kenewa.org/images/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -82,7 +82,7 @@
                 </li>
                 <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="resources.html" role="button"
+                    <a class="nav-link dropdown-toggle active" aria-current="page" href="resources.html" role="button"
                        data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item dropdown-overview" href="resources.html">Resources: overview</a></li>
@@ -93,7 +93,7 @@
                         <li><a class="dropdown-item" href="resources.html#study">Study and work</a></li>
                     </ul>
                 </li>
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 <li class="nav-item"><a class="nav-link" href="login.html" data-portal-link>Portal</a></li>
                 <li class="nav-item ms-xl-3 nav-btn">
                     <a class="btn btn-help btn-sm" href="support.html">Get help</a>
@@ -105,11 +105,11 @@
 
 <!-- ===================== PAGE BANNER ===================== -->
 <!-- Banner photo from Unsplash (see credits.html). To use your own: images/your-photo.jpg -->
-<header class="page-hero" style="--banner-photo: url('https://images.unsplash.com/photo-1639390763147-31f98d795f2e?auto=format&fit=crop&w=1800&q=70')">
+<header class="page-hero" style="--banner-photo: url('https://images.unsplash.com/photo-1655720348590-c739c860beed?auto=format&fit=crop&w=1800&q=70')">
     <div class="container">
-        <p class="hero-place">Contact</p>
-        <h1>Get in touch</h1>
-        <p class="hero-lead">Questions about membership, events or support? Send us a message and a committee member will reply.</p>
+        <p class="hero-place">Community resources</p>
+        <h1>Information that helps</h1>
+        <p class="hero-lead">Trusted places to find help and official information, gathered by KENEWA for members and anyone new to New England.</p>
     </div>
     <div class="flag-stripe" aria-hidden="true"></div>
 </header>
@@ -117,75 +117,55 @@
 <main id="main">
 <section class="section">
     <div class="container">
-        <div class="row g-4 g-lg-5">
-            <div class="col-lg-7">
-                <div class="form-card">
-                    <h2 class="h3 mb-3">Send a message</h2>
-                    <form name="contact" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field">
-                        <p class="d-none"><label>Leave this empty: <input name="bot-field"></label></p>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <label for="c-name" class="form-label">Your name</label>
-                                <input type="text" id="c-name" name="name" class="form-control" required autocomplete="name">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="c-email" class="form-label">Email</label>
-                                <input type="email" id="c-email" name="email" class="form-control" required autocomplete="email">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="c-phone" class="form-label">Phone (optional)</label>
-                                <input type="tel" id="c-phone" name="phone" class="form-control" autocomplete="tel">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="c-topic" class="form-label">What is it about?</label>
-                                <select id="c-topic" name="topic" class="form-select">
-                                    <option>General enquiry</option>
-                                    <option>Membership</option>
-                                    <option>Welfare support</option>
-                                    <option>Events</option>
-                                    <option>Partnership or sponsorship</option>
-                                    <option>Hosting or suggesting an event</option>
-                                    <option>Volunteering</option>
-                                    <option>Women's empowerment</option>
-                                    <option>Students and youth</option>
-                                    <option>Sport and wellbeing</option>
-                                    <option>Donation</option>
-                                    <option>Photos</option>
-                                </select>
-                            </div>
-                            <div class="col-12">
-                                <label for="c-message" class="form-label">Message</label>
-                                <textarea id="c-message" name="message" rows="6" class="form-control" required></textarea>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-check">
-                                    <input type="checkbox" id="c-privacy" name="privacy-consent" class="form-check-input" required>
-                                    <label for="c-privacy" class="form-check-label">I agree to KENEWA using these details to reply to me, as described in the <a href="privacy.html">Privacy policy</a>.</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <button type="submit" class="btn btn-gold btn-lg">Send message</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="col-lg-5">
-                <aside class="fact-panel">
-                    <h2 class="h4">Other ways to reach us</h2>
-                    <dl>
-                        <dt>Email</dt><dd><a href="mailto:info@kenewa.org">info@kenewa.org</a></dd>
-                        <dt>Phone</dt><dd><a href="tel:+61475140471">0475 140 471</a> (call, text or <a href="https://wa.me/61475140471" target="_blank" rel="noopener">WhatsApp</a>)</dd>
-                        <dt>Secretary</dt><dd>Michael Kiplangat</dd>
-                        <dt>Based in</dt><dd>Tamworth, NSW</dd>
-                        <dt>Area we serve</dt><dd>Tamworth, Armidale, Gunnedah, Inverell, Glen Innes, Moree and surrounding New England towns</dd>
-                        <dt>Postal address</dt><dd>6A Edinburg Avenue, West Tamworth NSW 2340</dd>
-                        <dt>Social media</dt><dd><a href="https://www.facebook.com/profile.php?id=61593756848950" target="_blank" rel="noopener">KENEWA on Facebook</a> and <a href="https://wa.me/61475140471" target="_blank" rel="noopener">WhatsApp</a>. Members get the members' WhatsApp group link in the <a href="login.html">members portal</a>.</dd>
-                    </dl>
-                    <p class="note mb-0">For urgent welfare matters, call us on <a href="tel:+61475140471">0475 140 471</a>. In an emergency, call 000.</p>
-                </aside>
-            </div>
-        </div>
+        <nav class="res-jump" aria-label="Jump to a topic">
+            <a href="#settling">Settling in</a><a href="#visas">Visas</a><a href="#health">Health</a><a href="#safety">Safety and respect</a><a href="#study">Study and work</a>
+        </nav>
+        <div class="emergency mb-4"><p class="mb-0"><strong>In danger or a medical emergency? Call 000.</strong>
+            Members can also <a href="support.html">ask KENEWA for support</a>, confidentially.</p></div>
+        <section class="res-group" id="settling">
+            <div class="res-head"><h2>Settling in</h2><p>First steps for new arrivals in New England.</p></div>
+            <ul class="res-list">
+                    <li><strong>Service NSW</strong><span>Driver licences, car registration and NSW government services.</span><span class="res-links"><a href="https://www.service.nsw.gov.au" target="_blank" rel="noopener">www.service.nsw.gov.au</a></span></li>
+                    <li><strong>Services Australia</strong><span>Medicare, Centrelink and Child Support.</span><span class="res-links"><a href="https://www.servicesaustralia.gov.au" target="_blank" rel="noopener">www.servicesaustralia.gov.au</a></span></li>
+                    <li><strong>Mosaic Multicultural Connections</strong><span>Settlement, family and community services for new arrivals (formerly Northern Settlement Services).</span><span class="res-links"><a href="https://www.mosaicmc.org.au" target="_blank" rel="noopener">www.mosaicmc.org.au</a></span></li>
+                    <li><strong>KENEWA new arrivals help</strong><span>Tell us you are new to the region and a member will get in touch.</span></li>
+            </ul>
+        </section>
+        <section class="res-group" id="visas">
+            <div class="res-head"><h2>Visas and official information</h2><p>Rules change often: always check the official source.</p></div>
+            <ul class="res-list">
+                    <li><strong>Department of Home Affairs</strong><span>Visas, citizenship and official immigration information.</span><span class="res-links"><a href="https://immi.homeaffairs.gov.au" target="_blank" rel="noopener">immi.homeaffairs.gov.au</a></span></li>
+                    <li><strong>Registered migration agents</strong><span>Check that a migration agent is registered before you pay for advice.</span><span class="res-links"><a href="https://www.mara.gov.au" target="_blank" rel="noopener">www.mara.gov.au</a></span></li>
+                    <li><strong>TIS National</strong><span>Free interpreting, including Swahili, for many services.</span><span class="res-links"><a href="tel:131450">131 450</a> &middot; <a href="https://www.tisnational.gov.au" target="_blank" rel="noopener">www.tisnational.gov.au</a></span></li>
+            </ul>
+        </section>
+        <section class="res-group" id="health">
+            <div class="res-head"><h2>Health and wellbeing</h2><p>Help for body and mind, any time.</p></div>
+            <ul class="res-list">
+                    <li><strong>healthdirect</strong><span>Free health advice from a registered nurse, 24 hours.</span><span class="res-links"><a href="tel:1800022222">1800 022 222</a> &middot; <a href="https://www.healthdirect.gov.au" target="_blank" rel="noopener">www.healthdirect.gov.au</a></span></li>
+                    <li><strong>NSW Mental Health Line</strong><span>Mental health advice and referral, 24 hours.</span><span class="res-links"><a href="tel:1800011511">1800 011 511</a></span></li>
+                    <li><strong>Lifeline</strong><span>Crisis support, 24 hours.</span><span class="res-links"><a href="tel:131114">13 11 14</a> &middot; <a href="https://www.lifeline.org.au" target="_blank" rel="noopener">www.lifeline.org.au</a></span></li>
+                    <li><strong>Beyond Blue</strong><span>Support for anxiety and depression.</span><span class="res-links"><a href="tel:1300224636">1300 22 4636</a> &middot; <a href="https://www.beyondblue.org.au" target="_blank" rel="noopener">www.beyondblue.org.au</a></span></li>
+            </ul>
+        </section>
+        <section class="res-group" id="safety">
+            <div class="res-head"><h2>Safety and respect</h2><p>Everyone deserves to be safe at home and in the community.</p></div>
+            <ul class="res-list">
+                    <li><strong>Emergency</strong><span>Police, fire or ambulance when someone is in danger.</span><span class="res-links"><a href="tel:000">000</a></span></li>
+                    <li><strong>1800RESPECT</strong><span>Confidential support for domestic, family and sexual violence, and help understanding consent.</span><span class="res-links"><a href="tel:1800737732">1800 737 732</a> &middot; <a href="https://www.1800respect.org.au" target="_blank" rel="noopener">www.1800respect.org.au</a></span></li>
+                    <li><strong>Kids Helpline</strong><span>For young people aged 5 to 25.</span><span class="res-links"><a href="tel:1800551800">1800 55 1800</a> &middot; <a href="https://kidshelpline.com.au" target="_blank" rel="noopener">kidshelpline.com.au</a></span></li>
+            </ul>
+        </section>
+        <section class="res-group" id="study">
+            <div class="res-head"><h2>Study and work</h2><p>Learning and working well in Australia.</p></div>
+            <ul class="res-list">
+                    <li><strong>University of New England</strong><span>Armidale-based university, with support for international students.</span><span class="res-links"><a href="https://www.une.edu.au" target="_blank" rel="noopener">www.une.edu.au</a></span></li>
+                    <li><strong>TAFE NSW</strong><span>Vocational courses and English classes across New England.</span><span class="res-links"><a href="https://www.tafensw.edu.au" target="_blank" rel="noopener">www.tafensw.edu.au</a></span></li>
+                    <li><strong>Fair Work Ombudsman</strong><span>Pay rates, rights at work and help with workplace problems.</span><span class="res-links"><a href="https://www.fairwork.gov.au" target="_blank" rel="noopener">www.fairwork.gov.au</a></span></li>
+            </ul>
+        </section>
+        <p class="note">KENEWA shares these links to help you find your way. We don't give legal, migration, financial or medical advice;
+           please check details with the official service. <a href="contact.html?topic=General%20enquiry">Suggest a resource</a>.</p>
     </div>
 </section>
 </main>

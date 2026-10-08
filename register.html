@@ -3,23 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact us | KENEWA</title>
+    <title>Register | KENEWA</title>
     <link rel="icon" type="image/svg+xml" href="images/logo-mark.svg">
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <meta name="description" content="Get in touch with the KENEWA committee.">
-    <link rel="canonical" href="https://kenewa.org/contact">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="KENEWA">
-    <meta property="og:title" content="Contact us | KENEWA">
-    <meta property="og:description" content="Get in touch with the KENEWA committee.">
-    <meta property="og:url" content="https://kenewa.org/contact">
-    <meta property="og:image" content="https://kenewa.org/images/og-image.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:locale" content="en_AU">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="theme-color" content="#00753A">
+    <meta name="description" content="Register as a KENEWA member by creating an account.">
+    <meta name="robots" content="noindex">
+    <meta http-equiv="refresh" content="4; url=login.html#signup">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -72,7 +62,7 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="membership.html" role="button"
+                    <a class="nav-link dropdown-toggle active" aria-current="page" href="membership.html" role="button"
                        data-bs-toggle="dropdown" aria-expanded="false">Membership</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item dropdown-overview" href="membership.html">Membership: overview</a></li>
@@ -93,7 +83,7 @@
                         <li><a class="dropdown-item" href="resources.html#study">Study and work</a></li>
                     </ul>
                 </li>
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 <li class="nav-item"><a class="nav-link" href="login.html" data-portal-link>Portal</a></li>
                 <li class="nav-item ms-xl-3 nav-btn">
                     <a class="btn btn-help btn-sm" href="support.html">Get help</a>
@@ -104,88 +94,19 @@
 </nav>
 
 <!-- ===================== PAGE BANNER ===================== -->
-<!-- Banner photo from Unsplash (see credits.html). To use your own: images/your-photo.jpg -->
-<header class="page-hero" style="--banner-photo: url('https://images.unsplash.com/photo-1639390763147-31f98d795f2e?auto=format&fit=crop&w=1800&q=70')">
+<header class="page-hero">
     <div class="container">
-        <p class="hero-place">Contact</p>
-        <h1>Get in touch</h1>
-        <p class="hero-lead">Questions about membership, events or support? Send us a message and a committee member will reply.</p>
+        <p class="hero-place">Membership registration</p>
+        <h1>Registration has moved</h1>
+        <p class="hero-lead">Members now register through their own KENEWA account. Taking you there now...</p>
     </div>
     <div class="flag-stripe" aria-hidden="true"></div>
 </header>
-
 <main id="main">
 <section class="section">
-    <div class="container">
-        <div class="row g-4 g-lg-5">
-            <div class="col-lg-7">
-                <div class="form-card">
-                    <h2 class="h3 mb-3">Send a message</h2>
-                    <form name="contact" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field">
-                        <p class="d-none"><label>Leave this empty: <input name="bot-field"></label></p>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <label for="c-name" class="form-label">Your name</label>
-                                <input type="text" id="c-name" name="name" class="form-control" required autocomplete="name">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="c-email" class="form-label">Email</label>
-                                <input type="email" id="c-email" name="email" class="form-control" required autocomplete="email">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="c-phone" class="form-label">Phone (optional)</label>
-                                <input type="tel" id="c-phone" name="phone" class="form-control" autocomplete="tel">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="c-topic" class="form-label">What is it about?</label>
-                                <select id="c-topic" name="topic" class="form-select">
-                                    <option>General enquiry</option>
-                                    <option>Membership</option>
-                                    <option>Welfare support</option>
-                                    <option>Events</option>
-                                    <option>Partnership or sponsorship</option>
-                                    <option>Hosting or suggesting an event</option>
-                                    <option>Volunteering</option>
-                                    <option>Women's empowerment</option>
-                                    <option>Students and youth</option>
-                                    <option>Sport and wellbeing</option>
-                                    <option>Donation</option>
-                                    <option>Photos</option>
-                                </select>
-                            </div>
-                            <div class="col-12">
-                                <label for="c-message" class="form-label">Message</label>
-                                <textarea id="c-message" name="message" rows="6" class="form-control" required></textarea>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-check">
-                                    <input type="checkbox" id="c-privacy" name="privacy-consent" class="form-check-input" required>
-                                    <label for="c-privacy" class="form-check-label">I agree to KENEWA using these details to reply to me, as described in the <a href="privacy.html">Privacy policy</a>.</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <button type="submit" class="btn btn-gold btn-lg">Send message</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="col-lg-5">
-                <aside class="fact-panel">
-                    <h2 class="h4">Other ways to reach us</h2>
-                    <dl>
-                        <dt>Email</dt><dd><a href="mailto:info@kenewa.org">info@kenewa.org</a></dd>
-                        <dt>Phone</dt><dd><a href="tel:+61475140471">0475 140 471</a> (call, text or <a href="https://wa.me/61475140471" target="_blank" rel="noopener">WhatsApp</a>)</dd>
-                        <dt>Secretary</dt><dd>Michael Kiplangat</dd>
-                        <dt>Based in</dt><dd>Tamworth, NSW</dd>
-                        <dt>Area we serve</dt><dd>Tamworth, Armidale, Gunnedah, Inverell, Glen Innes, Moree and surrounding New England towns</dd>
-                        <dt>Postal address</dt><dd>6A Edinburg Avenue, West Tamworth NSW 2340</dd>
-                        <dt>Social media</dt><dd><a href="https://www.facebook.com/profile.php?id=61593756848950" target="_blank" rel="noopener">KENEWA on Facebook</a> and <a href="https://wa.me/61475140471" target="_blank" rel="noopener">WhatsApp</a>. Members get the members' WhatsApp group link in the <a href="login.html">members portal</a>.</dd>
-                    </dl>
-                    <p class="note mb-0">For urgent welfare matters, call us on <a href="tel:+61475140471">0475 140 471</a>. In an emergency, call 000.</p>
-                </aside>
-            </div>
-        </div>
+    <div class="container text-center">
+        <a href="login.html#signup" class="btn btn-gold btn-lg">Create your account</a>
+        <a href="login.html" class="btn btn-outline-ink btn-lg ms-2">Log in</a>
     </div>
 </section>
 </main>

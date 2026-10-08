@@ -3,33 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About us | KNEWA</title>
-    <meta name="description" content="Who KNEWA is, our story, values and committee.">
+    <title>About us | KENEWA</title>
+    <link rel="icon" type="image/svg+xml" href="images/logo-mark.svg">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <meta name="description" content="Who KENEWA is: our story, objective, mission, vision, values and leadership.">
+    <link rel="canonical" href="https://kenewa.org/about">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="KENEWA">
+    <meta property="og:title" content="About us | KENEWA">
+    <meta property="og:description" content="Who KENEWA is: our story, objective, mission, vision, values and leadership.">
+    <meta property="og:url" content="https://kenewa.org/about">
+    <meta property="og:image" content="https://kenewa.org/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_AU">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#00753A">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
 
-    <!-- Bootstrap and icons, then our own styles -->
+    <!-- Bootstrap, then our own styles -->
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 
 <!-- ===================== NAVIGATION ===================== -->
-<nav class="navbar navbar-expand-lg site-nav">
+<nav class="navbar navbar-expand-xl site-nav" aria-label="Main">
     <div class="container">
-        <a class="navbar-brand brand" href="index.html">
-            <span class="brand-mark" aria-hidden="true"></span>
-            <span>
-                <span class="brand-name">KNEWA</span>
-                <span class="brand-sub">Kenyans in New England Welfare Association</span>
-            </span>
+        <a class="navbar-brand brand" href="index.html" aria-label="KENEWA home">
+            <img src="images/logo-mark.svg" alt="" class="brand-logo" width="52" height="52">
+            <span class="brand-text">Kenyans in<br>New England Welfare<br>Association</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#mainMenu" aria-controls="mainMenu"
@@ -37,14 +47,56 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="mainMenu">
-            <ul class="navbar-nav ms-auto align-items-lg-center">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="about.html">About</a></li>
+            <ul class="navbar-nav ms-auto align-items-xl-center">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" aria-current="page" href="about.html" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">About us</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item dropdown-overview" href="about.html">About us: overview</a></li>
+                        <li><a class="dropdown-item" href="about.html#mission">Mission, vision and values</a></li>
+                        <li><a class="dropdown-item" href="about.html#leadership">Our leadership</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="portfolios.html" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">Portfolios</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item dropdown-overview" href="portfolios.html">Portfolios: overview</a></li>
+                        <li><a class="dropdown-item" href="portfolios.html#welfare">Welfare</a></li>
+                        <li><a class="dropdown-item" href="portfolios.html#women">Women's empowerment</a></li>
+                        <li><a class="dropdown-item" href="portfolios.html#youth">Students and youth</a></li>
+                        <li><a class="dropdown-item" href="portfolios.html#sport">Sport and wellbeing</a></li>
+                        <li><a class="dropdown-item" href="portfolios.html#culture">Culture and events</a></li>
+                        <li><a class="dropdown-item" href="portfolios.html#communications">Communications and IT</a></li>
+                        <li><a class="dropdown-item" href="portfolios.html#partnerships">Partnerships and grants</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="membership.html" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">Membership</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item dropdown-overview" href="membership.html">Membership: overview</a></li>
+                        <li><a class="dropdown-item" href="membership.html#benefits">Member benefits</a></li>
+                        <li><a class="dropdown-item" href="welfare.html">Welfare support</a></li>
+                    </ul>
+                </li>
                 <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
-                <li class="nav-item"><a class="nav-link" href="welfare.html">Welfare support</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="resources.html" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item dropdown-overview" href="resources.html">Resources: overview</a></li>
+                        <li><a class="dropdown-item" href="resources.html#settling">Settling in</a></li>
+                        <li><a class="dropdown-item" href="resources.html#visas">Visas and official information</a></li>
+                        <li><a class="dropdown-item" href="resources.html#health">Health and wellbeing</a></li>
+                        <li><a class="dropdown-item" href="resources.html#safety">Safety and respect</a></li>
+                        <li><a class="dropdown-item" href="resources.html#study">Study and work</a></li>
+                    </ul>
+                </li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                <li class="nav-item ms-lg-3">
-                    <a class="btn btn-gold" href="membership.html">Join KNEWA</a>
+                <li class="nav-item"><a class="nav-link" href="login.html" data-portal-link>Portal</a></li>
+                <li class="nav-item ms-xl-3 nav-btn">
+                    <a class="btn btn-help btn-sm" href="support.html">Get help</a>
                 </li>
             </ul>
         </div>
@@ -52,32 +104,78 @@
 </nav>
 
 <!-- ===================== PAGE BANNER ===================== -->
-<header class="page-hero">
+<!-- Banner photo from Unsplash (see credits.html). To use your own: images/your-photo.jpg -->
+<header class="page-hero" style="--banner-photo: url('https://images.unsplash.com/photo-1704494785126-9fa711d245f2?auto=format&fit=crop&w=1800&q=70')">
     <div class="container">
-        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span>About</nav>
-        <p class="eyebrow">About KNEWA</p>
-        <h1>A Kenyan <em>family</em> in New England</h1>
+        <p class="hero-place">About us</p>
+        <h1>About our association</h1>
         <p class="hero-lead">Kenyans in New England Welfare Association Inc is a not-for-profit, non-political community association for Kenyans living in or connected with the New England region of NSW.</p>
     </div>
+    <div class="flag-stripe" aria-hidden="true"></div>
 </header>
 
-<main>
+<main id="main">
 <section class="section">
     <div class="container">
         <div class="row g-4 g-lg-5">
             <div class="col-lg-7 prose">
-                <p class="eyebrow">How it began</p>
-                <h2 class="section-title">Our <em>story</em></h2>
-                <p>KNEWA began at a founding meeting at 12 Porter Street, East Tamworth, where twelve members of
+                <p class="eyebrow">Who we are</p>
+                <h2 class="section-title">Our story</h2>
+                <p>KENEWA began at a founding meeting at 12 Porter Street, East Tamworth, where twelve members of
                    the local Kenyan community came together with one shared commitment: to establish a welfare
                    association for Kenyans living in the New England region. They unanimously resolved to form
                    the Kenyans in New England Welfare Association and elected an interim committee.</p>
-                <p>In July 2026 the association received its ABN, and on 29 July 2026 it was registered by NSW
-                   Fair Trading as an incorporated association under the <em>Associations Incorporation Act 2009</em>.
-                   The committee has since confirmed its office bearers and begun building membership through
-                   WhatsApp, Facebook, Instagram and TikTok.</p>
+                <p id="journey">The association received its ABN on 19 July 2026, and on 29 July 2026 NSW Fair Trading
+                   registered it as an incorporated association under the <em>Associations Incorporation Act 2009</em>
+                   (INC2601004). At its meeting on 23 August 2026 the committee confirmed its office bearers, agreed the
+                   joining fees, approved our social media channels, and started work on grant applications and this website.</p>
+                <p>Today KENEWA works through seven <a href="portfolios.html">portfolios</a>, from welfare and
+                   women's empowerment to students, sport and culture, each led by a volunteer committee member.</p>
+            </div>
+            <div class="col-lg-5">
+                <aside class="fact-panel">
+                    <h2 class="h4">At a glance</h2>
+                    <dl>
+                        <dt>Legal name</dt><dd>Kenyans in New England Welfare Association Inc</dd>
+                        <dt>Also known as</dt><dd>KENEWA</dd>
+                        <dt>Type</dt><dd>Not-for-profit, non-political incorporated association</dd>
+                        <dt>Incorporated</dt><dd>29 July 2026, NSW Fair Trading</dd>
+                        <dt>Registration no.</dt><dd>INC2601004</dd>
+                        <dt>ABN</dt><dd>17 238 522 745</dd>
+                        <dt>Area</dt><dd>New England region, NSW</dd>
+                        <dt>Based in</dt><dd>Tamworth</dd>
+                        <dt>Rules</dt><dd><a href="docs/kenewa-constitution.pdf">Constitution</a> and <a href="docs/kenewa-welfare-fund-policy.pdf">Welfare Fund Policy</a> (PDF)</dd>
+                    </dl>
+                </aside>
+            </div>
+        </div>
+    </div>
+</section>
 
-                <h2 class="section-title mt-5">Our purpose</h2>
+<section class="objective-band">
+    <div class="container">
+        <p class="eyebrow">Our main objective</p>
+        <blockquote>To stand as a united group for the welfare, representation and empowerment of Kenyans living in
+            or connected with the New England region of New South Wales.</blockquote>
+    </div>
+</section>
+
+<section class="section" id="mission">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-6"><article class="mv-card">
+                <p class="eyebrow">Our mission</p>
+                <p class="mv-text">To promote the welfare, unity and empowerment of Kenyans in the New England region through
+                   mutual support, community engagement, cultural preservation and collaboration.</p></article></div>
+            <div class="col-md-6"><article class="mv-card mv-vision">
+                <p class="eyebrow">Our vision</p>
+                <p class="mv-text">A united, inclusive and thriving Kenyan community that supports one another and contributes
+                   positively to Australian society.</p></article></div>
+        </div>
+
+        <h2 class="section-title mt-5">Our purpose</h2>
+        <div class="row g-4">
+            <div class="col-lg-6">
                 <ul class="tick-list">
                     <li>Promote unity among Kenyans living in the New England region</li>
                     <li>Provide welfare support to members and the wider community</li>
@@ -86,135 +184,167 @@
                     <li>Promote networking, education, community development, social support and mental health</li>
                 </ul>
             </div>
-            <div class="col-lg-5">
-                <aside class="fact-panel">
-                    <h2 class="h4">At a glance</h2>
-                    <dl>
-                        <dt>Legal name</dt><dd>Kenyans in New England Welfare Association Inc</dd>
-                        <dt>Also known as</dt><dd>KNEWA</dd>
-                        <dt>Type</dt><dd>Not-for-profit, non-political incorporated association</dd>
-                        <dt>Incorporated</dt><dd>29 July 2026, NSW Fair Trading</dd>
-                        <dt>Registration no.</dt><dd>INC2601004</dd>
-                        <dt>ABN</dt><dd>17 238 522 745</dd>
-                        <dt>Area</dt><dd>New England region, NSW</dd>
-                        <dt>Based in</dt><dd>Tamworth</dd>
-                    </dl>
-                </aside>
+            <div class="col-lg-6">
+                <ul class="values">
+                    <li><span class="sw" lang="sw">Umoja</span><span class="en">Unity</span><span class="desc">One community across every town and background.</span></li>
+                    <li><span class="sw" lang="sw">Upendo</span><span class="en">Care</span><span class="desc">We look out for one another, especially when it's hard.</span></li>
+                    <li><span class="sw" lang="sw">Heshima</span><span class="en">Respect</span><span class="desc">For every member, elder, culture and neighbour.</span></li>
+                    <li><span class="sw" lang="sw">Uaminifu</span><span class="en">Integrity</span><span class="desc">Open, accountable handling of members' contributions.</span></li>
+                </ul>
             </div>
         </div>
     </div>
 </section>
 
-<section class="section section-stone">
+<section class="section section-soft" id="leadership">
     <div class="container">
-        <div class="row g-4 g-lg-5 align-items-center">
-            <div class="col-lg-5">
-                <p class="eyebrow">Our founding promise</p>
-                <h2 class="section-title">Mission and <em>vision</em></h2>
-                <blockquote class="promise-quote">
-                    <p>A united, inclusive and thriving Kenyan community that supports one another and contributes positively to Australian society.</p>
-                </blockquote>
-            </div>
-            <div class="col-lg-7 prose">
-                <p><strong>Our mission</strong> is to promote the welfare, unity and empowerment of Kenyans in the New England
-                   region through mutual support, community engagement, cultural preservation and collaboration.</p>
-                <p><strong>Our values</strong> guide everything we do:</p>
-                <div class="row g-3">
-                    <div class="col-sm-6"><div class="value-card"><span class="value-icon" aria-hidden="true"><i class="bi bi-people-fill"></i></span><h3>Umoja</h3><p class="value-en">Unity</p><p>One community across every town and background.</p></div></div>
-                    <div class="col-sm-6"><div class="value-card"><span class="value-icon" aria-hidden="true"><i class="bi bi-heart-fill"></i></span><h3>Upendo</h3><p class="value-en">Care</p><p>We look out for one another, especially when it's hard.</p></div></div>
-                    <div class="col-sm-6"><div class="value-card"><span class="value-icon" aria-hidden="true"><i class="bi bi-hand-thumbs-up-fill"></i></span><h3>Heshima</h3><p class="value-en">Respect</p><p>For every member, elder, culture and neighbour.</p></div></div>
-                    <div class="col-sm-6"><div class="value-card"><span class="value-icon" aria-hidden="true"><i class="bi bi-shield-check"></i></span><h3>Uaminifu</h3><p class="value-en">Integrity</p><p>Open, accountable handling of members' contributions.</p></div></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container">
-        <p class="eyebrow">Who leads us</p>
-        <h2 class="section-title">Our <em>committee</em></h2>
-        <p class="lead-narrow">Our interim committee serves voluntarily until the first Annual General Meeting,
+        <p class="eyebrow">Our leadership</p>
+        <h2 class="section-title">The committee</h2>
+        <p class="lead-narrow">Our committee serves voluntarily until the first Annual General Meeting,
            when members will elect the committee for a one-year term.</p>
         <!-- UPDATE after each election. To add photos, put an <img> inside each .person -->
-        <div class="row g-4 committee">
-            <div class="col-6 col-md-4 col-lg-3"><div class="person"><span class="initials" aria-hidden="true">EN</span><p class="name">Edwin Ng’etich</p><p class="role">Chairperson</p></div></div>
-            <div class="col-6 col-md-4 col-lg-3"><div class="person"><span class="initials" aria-hidden="true">FK</span><p class="name">Felix Kiprop</p><p class="role">Vice Chairperson</p></div></div>
-            <div class="col-6 col-md-4 col-lg-3"><div class="person"><span class="initials" aria-hidden="true">MK</span><p class="name">Michael Kiplangat</p><p class="role">Secretary</p></div></div>
-            <div class="col-6 col-md-4 col-lg-3"><div class="person"><span class="initials" aria-hidden="true">GS</span><p class="name">Geoffrey Seurei</p><p class="role">Organising Secretary</p></div></div>
-            <div class="col-6 col-md-4 col-lg-3"><div class="person"><span class="initials" aria-hidden="true">HB</span><p class="name">Hillary Bett</p><p class="role">Treasurer</p></div></div>
-            <div class="col-6 col-md-4 col-lg-3"><div class="person"><span class="initials" aria-hidden="true">EY</span><p class="name">Evans Yego</p><p class="role">IT and Communications</p></div></div>
-            <div class="col-6 col-md-4 col-lg-3"><div class="person"><span class="initials" aria-hidden="true">RT</span><p class="name">Ruth Tanui</p><p class="role">Student Representative</p></div></div>
-            <div class="col-6 col-md-4 col-lg-3"><div class="person"><span class="initials" aria-hidden="true">SK</span><p class="name">Sheldon Kipkemboi</p><p class="role">Sport</p></div></div>
-            <div class="col-6 col-md-4 col-lg-3"><div class="person"><span class="initials" aria-hidden="true">JB</span><p class="name">Janet Bett</p><p class="role">Women's Empowerment</p></div></div>
-            <div class="col-6 col-md-4 col-lg-3"><div class="person"><span class="initials" aria-hidden="true">LS</span><p class="name">Leonard Serem</p><p class="role">Committee Member</p></div></div>
-            <div class="col-6 col-md-4 col-lg-3"><div class="person"><span class="initials" aria-hidden="true">LB</span><p class="name">Lynn Bett</p><p class="role">Committee Member</p></div></div>
-            <div class="col-6 col-md-4 col-lg-3"><div class="person"><span class="initials" aria-hidden="true">CN</span><p class="name">Caroline Njuguna</p><p class="role">Committee Member</p></div></div>
-            <div class="col-6 col-md-4 col-lg-3"><div class="person"><span class="initials" aria-hidden="true">BC</span><p class="name">Bramwel Cheroben</p><p class="role">Committee Member</p></div></div>
-            <div class="col-6 col-md-4 col-lg-3"><div class="person"><span class="initials" aria-hidden="true">NY</span><p class="name">Nicholas Yagan</p><p class="role">Committee Member</p></div></div>
+        <div class="row g-3 committee">
+            <div class="col-6 col-md-4"><div class="person"><span class="initials" aria-hidden="true">EN</span><p class="name">Edwin Ng’etich</p><p class="role">Chairperson</p></div></div>
+            <div class="col-6 col-md-4"><div class="person"><span class="initials" aria-hidden="true">FK</span><p class="name">Felix Kiprop</p><p class="role">Vice Chairperson</p></div></div>
+            <div class="col-6 col-md-4"><div class="person"><span class="initials" aria-hidden="true">MK</span><p class="name">Michael Kiplangat</p><p class="role">Secretary</p></div></div>
+            <div class="col-6 col-md-4"><div class="person"><span class="initials" aria-hidden="true">GS</span><p class="name">Geoffrey Seurei</p><p class="role">Organising Secretary</p></div></div>
+            <div class="col-6 col-md-4"><div class="person"><span class="initials" aria-hidden="true">HB</span><p class="name">Hillary Bett</p><p class="role">Treasurer</p></div></div>
+            <div class="col-6 col-md-4"><div class="person"><span class="initials" aria-hidden="true">EY</span><p class="name">Evans Yego</p><p class="role">IT and Communications</p></div></div>
+            <div class="col-6 col-md-4"><div class="person"><span class="initials" aria-hidden="true">RT</span><p class="name">Ruth Tanui</p><p class="role">Student Representative</p></div></div>
+            <div class="col-6 col-md-4"><div class="person"><span class="initials" aria-hidden="true">SK</span><p class="name">Sheldon Kipkemboi</p><p class="role">Sport</p></div></div>
+            <div class="col-6 col-md-4"><div class="person"><span class="initials" aria-hidden="true">JB</span><p class="name">Janet Bett</p><p class="role">Women's Empowerment</p></div></div>
         </div>
     </div>
 </section>
-</main>
 
-<!-- ===================== CALL TO ACTION ===================== -->
-<section class="cta">
-    <div class="container text-center">
-        <p class="eyebrow">Take the first step</p>
-        <h2>Be part of the <em>story</em></h2>
-        <p>KNEWA is new, and every member who joins now helps shape what it becomes.</p>
-        <div class="cta-actions">
-            <a href="membership.html" class="btn btn-gold btn-lg">Become a member</a>
-            <span class="cta-or">or</span>
-            <a href="contact.html" class="cta-link">Ask us a question</a>
+
+<!-- ===================== DONATE ===================== -->
+<section class="donate-band">
+    <div class="container">
+        <div class="row g-4 align-items-center">
+            <div class="col-lg-8">
+                <h2>Stand with a family in need</h2>
+                <p>When a member's family faces bereavement, serious illness or sudden hardship, the KENEWA welfare fund
+                   is there. Donations from members, friends and local businesses help us respond quickly, the
+                   <span lang="sw">harambee</span> way.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <a href="welfare.html#donate" class="btn btn-gold btn-lg">Donate</a>
+            </div>
         </div>
     </div>
 </section>
+
+<!-- ===================== TWO WAYS TO JOIN ===================== -->
+<section class="section join-paths" id="ways">
+    <div class="container">
+        <div class="section-head text-center">
+            <h2 class="section-title">Wish to become a member?</h2>
+            <p class="lead-narrow mx-auto">Choose the membership that suits you. Both start with a free members portal account.</p>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-5">
+                <article class="path-card">
+                    <p class="path-price">Free</p>
+                    <h3>Community membership</h3>
+                    <p>For Kenyans, their families and friends of our community who want to stay connected.</p>
+                    <ul class="tick-list">
+                        <li>News, notices and the members' WhatsApp group</li>
+                        <li>Invitations to every KENEWA event</li>
+                        <li>Access to the members portal</li>
+                    </ul>
+                    <a href="login.html#signup" class="btn btn-outline-ink btn-lg">Join for free</a>
+                </article>
+            </div>
+            <div class="col-md-6 col-lg-5">
+                <article class="path-card path-featured">
+                    <p class="path-price">$200 <span>to join</span></p>
+                    <h3>Welfare membership</h3>
+                    <p>Financial membership with welfare fund cover for you and your registered family.</p>
+                    <ul class="tick-list">
+                        <li>Support in bereavement, illness and hardship</li>
+                        <li>A vote at general meetings and a say in the welfare fund</li>
+                        <li>Everything in community membership</li>
+                    </ul>
+                    <a href="membership.html" class="btn btn-gold btn-lg">Become a welfare member</a>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
 
 <!-- ===================== FOOTER ===================== -->
 <footer class="site-footer">
     <div class="container">
         <div class="row g-4">
-            <div class="col-md-5">
+            <div class="col-lg-4">
+                <img src="images/logo-mark.svg" alt="" width="64" height="64" class="footer-logo">
                 <p class="footer-name">Kenyans in New England Welfare Association Inc</p>
+                <p class="footer-motto"><span lang="sw">Umoja ni nguvu</span>: unity is strength</p>
                 <p>A not-for-profit, non-political community association promoting the welfare, unity and
                    empowerment of Kenyans in the New England region of NSW.</p>
                 <p class="footer-reg">Incorporated in NSW under the <em>Associations Incorporation Act 2009</em><br>
                    Registration no. INC2601004 &middot; ABN 17 238 522 745</p>
             </div>
-            <div class="col-6 col-md-3">
-                <p class="footer-head">Explore</p>
+            <div class="col-6 col-md-4 col-lg-2">
+                <p class="footer-head">Quick links</p>
                 <ul class="footer-links">
                     <li><a href="about.html">About us</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="welfare.html">Welfare support</a></li>
                     <li><a href="membership.html">Membership</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="resources.html">Community resources</a></li>
+                    <li><a href="welfare.html">Welfare support</a></li>
+                    <li><a href="login.html">Members portal</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
-            <div class="col-6 col-md-4">
-                <p class="footer-head">Get in touch</p>
+            <div class="col-6 col-md-4 col-lg-3">
+                <p class="footer-head">Portfolios</p>
                 <ul class="footer-links">
-                    <!-- UPDATE with KNEWA's real contact details -->
-                    <li><i class="bi bi-envelope" aria-hidden="true"></i><a href="mailto:secretary@kenewa.org">secretary@kenewa.org</a></li>
-                    <li><i class="bi bi-geo-alt" aria-hidden="true"></i>Tamworth, NSW</li>
-                    <li><i class="bi bi-chat-dots" aria-hidden="true"></i><a href="contact.html">Contact form</a></li>
+                    <li><a href="portfolios.html#welfare">Welfare</a></li>
+                    <li><a href="portfolios.html#women">Women's empowerment</a></li>
+                    <li><a href="portfolios.html#youth">Students and youth</a></li>
+                    <li><a href="portfolios.html#sport">Sport and wellbeing</a></li>
+                    <li><a href="portfolios.html#culture">Culture and events</a></li>
+                    <li><a href="portfolios.html#communications">Communications and IT</a></li>
+                    <li><a href="portfolios.html#partnerships">Partnerships and grants</a></li>
                 </ul>
-                <!-- UPDATE: paste the links to KNEWA's pages in place of each # -->
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <p class="footer-head">Around the web</p>
+                <p>Follow KENEWA for event news, photos and community notices.</p>
                 <ul class="social">
-                    <li><a href="#" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href="#" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a></li>
-                    <li><a href="#" aria-label="TikTok"><i class="bi bi-tiktok" aria-hidden="true"></i></a></li>
-                    <li><a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61593756848950" target="_blank" rel="noopener">Facebook</a></li>
+                    <li><a href="https://wa.me/61475140471" target="_blank" rel="noopener">WhatsApp</a></li>
+                </ul>
+                <p class="footer-head mt-4">Get in touch</p>
+                <ul class="footer-links footer-contact">
+                    <li><a href="mailto:info@kenewa.org">info@kenewa.org</a></li>
+                    <li><a href="tel:+61475140471">0475 140 471</a> (call or <a href="https://wa.me/61475140471" target="_blank" rel="noopener">WhatsApp</a>)</li>
+                    <li>Tamworth and the New England region, NSW</li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
             <span>&copy; <span id="year">2026</span> Kenyans in New England Welfare Association Inc</span>
-            <a href="privacy.html">Privacy policy</a>
+            <span><a href="privacy.html">Privacy policy</a> &middot; <a href="credits.html">Photo credits</a> &middot; <a href="support.html">Get help</a></span>
         </div>
     </div>
 </footer>
+
+<!-- Floating help button (bottom right of every page) -->
+<a class="help-bubble" href="support.html" aria-label="Get help from KENEWA">
+    <svg viewBox="0 0 48 48" width="34" height="34" aria-hidden="true">
+        <circle cx="24" cy="17" r="8" fill="currentColor"/>
+        <path d="M9 41c1.5-8.5 7.5-13 15-13s13.5 4.5 15 13z" fill="currentColor"/>
+        <path d="M13 19a11 11 0 0 1 22 0" fill="none" stroke="#BBF7D0" stroke-width="3" stroke-linecap="round"/>
+        <rect x="10.5" y="17" width="4.5" height="8" rx="2" fill="#BBF7D0"/>
+        <rect x="33" y="17" width="4.5" height="8" rx="2" fill="#BBF7D0"/>
+    </svg>
+    <span class="help-bubble-label">Need help?</span>
+</a>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/main.js"></script>
