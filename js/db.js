@@ -21,6 +21,7 @@ function showMsg(el, text, type) {
 // Show a setup notice instead of a broken page if Supabase isn't connected yet
 function needsSetup() {
     if (KNEWA_READY) return false;
+    document.documentElement.classList.remove("auth-pending");
     document.body.insertAdjacentHTML("afterbegin",
         '<div class="setup-note">The members system is not connected yet. Add your Supabase details to <code>js/config.js</code> (see README).</div>');
     return true;
@@ -42,10 +43,13 @@ async function currentUser() {
 async function requireUser() {
     const user = await currentUser();
     if (!user) {
-        const page = location.pathname.split("/").pop() || "portal.html";
-        location.href = "login.html?next=" + encodeURIComponent(page + location.hash);
+        let page = location.pathname.split("/").pop() || "portal.html";
+        if (!/\.html$/i.test(page)) page += ".html";   // kenewa.org/portal -> portal.html, so login can send them back
+        // replace (not href) so the Back button doesn't return to this page and bounce again
+        location.replace("login.html?next=" + encodeURIComponent(page + location.hash));
         return null;
     }
+    document.documentElement.classList.remove("auth-pending");   // signed in: show the page (hidden by js/guard.js)
     return user;
 }
 

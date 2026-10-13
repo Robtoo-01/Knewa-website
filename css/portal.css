@@ -5,6 +5,9 @@
    ========================================================= */
 body.app, .login-page { background: var(--stone); }
 
+/* Hide the members area until sign-in is confirmed (set by js/guard.js, removed in js/db.js) */
+html.auth-pending body { visibility: hidden; }
+
 /* ---------- Top bar ---------- */
 .app-top { background: #fff; border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 1030; }
 .app-top-inner { max-width: 1320px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .6rem 1rem; }
