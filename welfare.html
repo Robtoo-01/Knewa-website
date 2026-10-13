@@ -3,33 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welfare support | KNEWA</title>
-    <meta name="description" content="How KNEWA supports members through bereavement, illness and hardship.">
+    <title>Welfare support | KENEWA</title>
+    <link rel="icon" type="image/svg+xml" href="images/logo-mark.svg">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <meta name="description" content="How KENEWA supports members through bereavement, illness and hardship.">
+    <link rel="canonical" href="https://kenewa.org/welfare">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="KENEWA">
+    <meta property="og:title" content="Welfare support | KENEWA">
+    <meta property="og:description" content="How KENEWA supports members through bereavement, illness and hardship.">
+    <meta property="og:url" content="https://kenewa.org/welfare">
+    <meta property="og:image" content="https://kenewa.org/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_AU">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#00753A">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
 
-    <!-- Bootstrap and icons, then our own styles -->
+    <!-- Bootstrap, then our own styles -->
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 
 <!-- ===================== NAVIGATION ===================== -->
-<nav class="navbar navbar-expand-lg site-nav">
+<nav class="navbar navbar-expand-xl site-nav" aria-label="Main">
     <div class="container">
-        <a class="navbar-brand brand" href="index.html">
-            <span class="brand-mark" aria-hidden="true"></span>
-            <span>
-                <span class="brand-name">KNEWA</span>
-                <span class="brand-sub">Kenyans in New England Welfare Association</span>
-            </span>
+        <a class="navbar-brand brand" href="index.html" aria-label="KENEWA home">
+            <img src="images/logo-mark.svg" alt="" class="brand-logo" width="52" height="52">
+            <span class="brand-text">Kenyans in<br>New England Welfare<br>Association</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#mainMenu" aria-controls="mainMenu"
@@ -37,14 +47,56 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="mainMenu">
-            <ul class="navbar-nav ms-auto align-items-lg-center">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <ul class="navbar-nav ms-auto align-items-xl-center">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="about.html" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">About us</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item dropdown-overview" href="about.html">About us: overview</a></li>
+                        <li><a class="dropdown-item" href="about.html#mission">Mission, vision and values</a></li>
+                        <li><a class="dropdown-item" href="about.html#leadership">Our leadership</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="portfolios.html" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">Portfolios</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item dropdown-overview" href="portfolios.html">Portfolios: overview</a></li>
+                        <li><a class="dropdown-item" href="portfolios.html#welfare">Welfare</a></li>
+                        <li><a class="dropdown-item" href="portfolios.html#women">Women's empowerment</a></li>
+                        <li><a class="dropdown-item" href="portfolios.html#youth">Students and youth</a></li>
+                        <li><a class="dropdown-item" href="portfolios.html#sport">Sport and wellbeing</a></li>
+                        <li><a class="dropdown-item" href="portfolios.html#culture">Culture and events</a></li>
+                        <li><a class="dropdown-item" href="portfolios.html#communications">Communications and IT</a></li>
+                        <li><a class="dropdown-item" href="portfolios.html#partnerships">Partnerships and grants</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" aria-current="page" href="membership.html" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">Membership</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item dropdown-overview" href="membership.html">Membership: overview</a></li>
+                        <li><a class="dropdown-item" href="membership.html#benefits">Member benefits</a></li>
+                        <li><a class="dropdown-item" href="welfare.html">Welfare support</a></li>
+                    </ul>
+                </li>
                 <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="welfare.html">Welfare support</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="resources.html" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item dropdown-overview" href="resources.html">Resources: overview</a></li>
+                        <li><a class="dropdown-item" href="resources.html#settling">Settling in</a></li>
+                        <li><a class="dropdown-item" href="resources.html#visas">Visas and official information</a></li>
+                        <li><a class="dropdown-item" href="resources.html#health">Health and wellbeing</a></li>
+                        <li><a class="dropdown-item" href="resources.html#safety">Safety and respect</a></li>
+                        <li><a class="dropdown-item" href="resources.html#study">Study and work</a></li>
+                    </ul>
+                </li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                <li class="nav-item ms-lg-3">
-                    <a class="btn btn-gold" href="membership.html">Join KNEWA</a>
+                <li class="nav-item"><a class="nav-link" href="login.html" data-portal-link>Portal</a></li>
+                <li class="nav-item ms-xl-3 nav-btn">
+                    <a class="btn btn-help btn-sm" href="support.html">Get help</a>
                 </li>
             </ul>
         </div>
@@ -52,47 +104,106 @@
 </nav>
 
 <!-- ===================== PAGE BANNER ===================== -->
-<header class="page-hero">
+<!-- Banner photo from Unsplash (see credits.html). To use your own: images/your-photo.jpg -->
+<header class="page-hero" style="--banner-photo: url('https://images.unsplash.com/photo-1576560665905-28b4d4ea3380?auto=format&fit=crop&w=1800&q=70')">
     <div class="container">
-        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span>Welfare support</nav>
-        <p class="eyebrow">Bereavement · Illness · Hardship</p>
-        <h1>When life is hard, we <em>stand together</em></h1>
-        <p class="hero-lead">Welfare support is at the heart of KNEWA. Here is what it covers and how to ask for help.</p>
+        <p class="hero-place">Welfare support</p>
+        <h1>When life is hard, we stand together</h1>
+        <p class="hero-lead">Welfare support is at the heart of KENEWA. Here is what it covers and how to ask for help.</p>
     </div>
+    <div class="flag-stripe" aria-hidden="true"></div>
 </header>
 
-<main>
+<main id="main">
 <section class="section">
     <div class="container">
         <div class="row g-4 g-lg-5">
             <div class="col-lg-6 prose">
-                <p class="eyebrow">Harambee</p>
-                <h2 class="section-title">What support <em>covers</em></h2>
-                <!-- UPDATE when the committee adopts a written welfare fund policy -->
-                <p>When new members join, $170 of their $200 joining fee goes into the KNEWA welfare fund. This is
+                <h2 class="section-title">What support covers</h2>
+                <p>When new members join, $170 of their $200 joining fee goes into the KENEWA welfare fund, and so does
+                   the whole $170 annual renewal fee. This is
                    the modern form of the Kenyan tradition of <em>harambee</em>: pulling together so that no family
-                   carries a crisis alone. Support is available to financial members, and the committee decides
-                   each case fairly.</p>
+                   carries a crisis alone. Support is available to welfare (financial) members and their
+                   registered family, and the committee decides each case fairly under the
+                   <a href="docs/kenewa-welfare-fund-policy.pdf">Welfare Fund Policy</a> (PDF).</p>
                 <div class="support-list">
-                    <div class="support"><h3>Bereavement</h3><p>Financial and practical help when a member or close family member passes away, including funeral costs in Australia or repatriation to Kenya, meals, transport and liaising with family at home.</p></div>
+                    <div class="support"><h3>Bereavement</h3><p>Financial and practical help when a member or registered family member passes away, including funeral costs in Australia or repatriation to Kenya, meals, transport and liaising with family at home.</p></div>
                     <div class="support"><h3>Serious illness or injury</h3><p>Visits, meals, transport and, where approved, financial assistance during hospitalisation or long recovery.</p></div>
-                    <div class="support"><h3>Sudden hardship</h3><p>Help after emergencies such as fire, flood or job loss, including links to local services.</p></div>
-                    <div class="support"><h3>Celebrations</h3><p>We also mark happy milestones: weddings, new babies and graduations.</p></div>
+                    <div class="support"><h3>Sudden hardship</h3><p>Help after emergencies such as fire, flood, family violence or job loss, for example paying an urgent bill on your behalf, plus links to local services.</p></div>
+                    <div class="support"><h3>New arrivals</h3><p>Practical help for newly arrived Kenyan families: a welcome pack, help setting up essential services, short-term food or household items, and introductions to settlement services.</p></div>
                 </div>
+                <p class="note">Outside the welfare fund, the community also celebrates happy milestones with you: weddings, new babies and graduations.</p>
             </div>
             <div class="col-lg-6">
-                <p class="eyebrow">Step by step</p>
-                <h2 class="section-title">How to ask for <em>help</em></h2>
+                <h2 class="section-title">How to ask for help</h2>
                 <ol class="steps">
-                    <li><h3>Contact a committee member</h3><p>Call or message the Chairperson, Secretary or any committee member, or use the <a href="contact.html">contact form</a>. Family or friends can contact us on a member's behalf.</p></li>
-                    <li><h3>We listen and check details</h3><p>A committee member confirms membership and what support is needed. Everything is kept confidential.</p></li>
-                    <li><h3>The committee decides</h3><p>Urgent cases, such as a bereavement, are handled as quickly as possible.</p></li>
-                    <li><h3>Members mobilise</h3><p>Support is given and, where needed, members are asked to contribute through the agreed welfare process.</p></li>
+                    <li><h3>Contact a committee member</h3><p>Call a committee member or send a request through the <a href="support.html">Get help</a> page. Family or friends can ask on a member's behalf.</p></li>
+                    <li><h3>We listen and check details</h3><p>A committee member confirms membership and what support is needed. We may ask for a document such as a funeral quote or hospital letter, but in an emergency we can help first and collect it later. Everything is kept confidential.</p></li>
+                    <li><h3>The committee decides</h3><p>Within 48 hours for a bereavement or emergency, and within 7 days for other requests. We tell you the decision in writing and, if support is reduced or declined, why.</p></li>
+                    <li><h3>Support is given</h3><p>Where possible we pay the funeral director, landlord or other provider directly. If needed, members may also be asked to give to a community collection (<span lang="sw">harambee</span>). <a href="#bereavement">What happens after a death</a>.</p></li>
+                </ol>
+            </div>
+        </div>
+
+        <h2 class="section-title mt-5" id="limits">How much support?</h2>
+        <p class="lead-narrow mb-3">These are the most the welfare fund can give for each event. The committee decides the amount
+           based on need and what the fund can afford, so meeting the rules does not guarantee the full amount.
+           The fund tops up other help, such as insurance, Centrelink or a funeral fund, and we'll help you apply for those too.</p>
+        <!-- From Schedule A of the Welfare Fund Policy. UPDATE here and in the PDF if the committee changes the limits. -->
+        <div class="row"><div class="col-lg-8">
+        <table class="fees">
+            <tr><th scope="row">Bereavement: death in Australia<br><span class="note">Funeral, burial or cremation costs</span></th><td>up to $3,000</td></tr>
+            <tr><th scope="row">Bereavement: repatriation to Kenya<br><span class="note">Plus a community collection if needed</span></th><td>up to $5,000</td></tr>
+            <tr><th scope="row">Illness or hospitalisation<br><span class="note">Evidence of need required</span></th><td>up to $1,000</td></tr>
+            <tr><th scope="row">Emergency hardship<br><span class="note">One-off, per household per 12 months</span></th><td>up to $500</td></tr>
+            <tr><th scope="row">New arrival settlement<br><span class="note">Per family, first 6 months only</span></th><td>up to $300</td></tr>
+            <tr><th scope="row">Emergency help for non-members<br><span class="note">At the committee's discretion, per person per year</span></th><td>up to $300</td></tr>
+        </table>
+        </div></div>
+        <p class="note">Full rules: <a href="docs/kenewa-welfare-fund-policy.pdf">Welfare Fund Policy</a> (PDF, includes the application form).</p>
+    </div>
+</section>
+
+<section class="section section-soft" id="bereavement">
+    <div class="container">
+        <div class="row g-4 g-lg-5">
+            <div class="col-lg-5">
+                <p class="eyebrow">If someone passes away</p>
+                <h2 class="section-title">We will walk with your family</h2>
+                <p>When a member or a registered family member dies, call us straight away on
+                   <a href="tel:+61475140471"><strong>0475 140 471</strong></a>, day or night. You don't need to fill in a form first.</p>
+                <p class="note">Family and friends can call on the family's behalf.</p>
+                <a href="tel:+61475140471" class="btn btn-gold btn-lg mt-2">Call 0475 140 471</a>
+            </div>
+            <div class="col-lg-7">
+                <ol class="steps">
+                    <li><h3>One person to talk to</h3><p>A committee member becomes your family's contact, so you only need to speak to one person. Your family decides: burial or cremation here, or repatriation to Kenya.</p></li>
+                    <li><h3>Help with the arrangements</h3><p>We help find a funeral director, and if your family chooses repatriation, we help gather the paperwork: the death certificate, the funeral director's certificates and the Kenya High Commission's letter. If the death was sudden, the Coroner may need to be involved first, and we'll explain what that means.</p></li>
+                    <li><h3>Money, quickly</h3><p>We check whether any insurance (funeral, travel, life or visa health cover) will pay, then the welfare fund helps within its limits. For a bereavement the committee decides within 48 hours and pays the funeral director or airline directly.</p></li>
+                    <li><h3>The community stands with you</h3><p>With your family's agreement we tell members, organise prayers and meals, and help with airport pick-ups and practical tasks. We check in again in the weeks after.</p></li>
                 </ol>
             </div>
         </div>
     </div>
 </section>
+
+<!-- UPDATE: when the Committee adopts Welfare Fund Policy Amendment No. 1, remove the comment marks around this section.
+<section class="section" id="large-claims">
+    <div class="container prose narrow">
+        <h2 class="section-title">When a big claim comes in</h2>
+        <p>The welfare fund keeps a reserve of at least $3,000 so it is always ready for the next family, and we are building
+           it towards $5,000. If paying a claim in full would take the fund below its reserve, the whole committee decides within
+           24 hours how to pay it. A bereavement payment is never held up: we pay what we can straight away and top up the rest.</p>
+        <p>For a bereavement or other serious event, the committee may also invite members, friends and local businesses to give
+           to a voluntary <span lang="sw">harambee</span> appeal.</p>
+    </div>
+</section> -->
+<!-- UPDATE: only after members approve the Special Welfare Levy at a General Meeting, move this paragraph into the
+     "When a big claim comes in" section above (after the harambee paragraph):
+        <p>Members have also agreed that the committee can ask each welfare member for a Special Welfare Levy of up to $50
+           for a bereavement or repatriation, no more than twice a year. Members in hardship can ask the Treasurer, in confidence,
+           for the levy to be waived.</p>
+-->
 
 <section class="section section-green">
     <div class="container">
@@ -103,9 +214,8 @@
                    <strong>Lifeline on 13 11 14</strong>.</p>
             </div>
             <div class="col-lg-6">
-                <p>For KNEWA welfare support, contact the Chairperson, Edwin Ng’etich, the Secretary, Michael Kiplangat, or any committee member:</p>
-                <!-- UPDATE with real phone numbers -->
-                <p class="big-contact"><a href="mailto:secretary@kenewa.org">secretary@kenewa.org</a></p>
+                <p>For KENEWA welfare support, call a committee member or send a confidential request:</p>
+                <a href="support.html" class="btn btn-gold btn-lg">Get help now</a>
             </div>
         </div>
     </div>
@@ -113,44 +223,84 @@
 
 <section class="section">
     <div class="container prose narrow">
-        <p class="eyebrow">FAQs</p>
-        <h2 class="section-title">Common <em>questions</em></h2>
+        <h2 class="section-title">Common questions</h2>
         <div class="accordion faq" id="faq">
             <div class="accordion-item">
                 <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q1" aria-expanded="false" aria-controls="q1">Who can receive welfare support?</button></h3>
-                <div id="q1" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">Financial members whose membership is up to date. Who else in a member's family is covered will be set out in the welfare fund policy.</div></div>
+                <div id="q1" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">Welfare (financial) members and life members whose membership is current, together with the family members they have registered in the members portal (up to 1 spouse, 7 dependants and 7 siblings). Community members and other people in New England can be helped in a genuine emergency, at the committee's discretion, up to $300 per person per year.</div></div>
             </div>
             <div class="accordion-item">
                 <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2" aria-expanded="false" aria-controls="q2">Is there a waiting period for new members?</button></h3>
-                <!-- UPDATE: state KNEWA's actual waiting period, if any -->
-                <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">New members may need to complete a short qualifying period before some financial support applies. Please ask the committee for the current rules.</div></div>
+                <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">Yes. Your membership needs to have been current for 3 months before welfare support applies. There is no waiting period for a bereavement or a life-threatening emergency: the committee can help straight away.</div></div>
             </div>
             <div class="accordion-item">
                 <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3" aria-expanded="false" aria-controls="q3">Will my situation be kept private?</button></h3>
-                <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">Yes. Only the committee members handling your request will know the details, unless you agree to share them with members.</div></div>
+                <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">Yes. Only the committee members handling your request will know the details, unless you agree to share them with members. Reports to members describe welfare payments only in general terms, without names.</div></div>
+            </div>
+            <div class="accordion-item">
+                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q4" aria-expanded="false" aria-controls="q4">What if I disagree with a decision?</button></h3>
+                <div id="q4" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">You can ask in writing for a review within 14 days. Committee members who were not part of the first decision will review it, and you can come and speak.</div></div>
+            </div>
+            <div class="accordion-item">
+                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q6" aria-expanded="false" aria-controls="q6">Should I still have my own insurance?</button></h3>
+                <div id="q6" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">Yes, if you can. The welfare fund tops up other help but has limits, and repatriation to Kenya can cost more than the fund can give. Check whether your visa health cover, travel, life or funeral insurance pays for repatriation, and tell your family where your policy details are kept.</div></div>
+            </div>
+            <div class="accordion-item">
+                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q5" aria-expanded="false" aria-controls="q5">Do I have to pay it back?</button></h3>
+                <div id="q5" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">No. Support is normally a gift, not a loan. In some cases the committee may offer an interest-free repayment arrangement instead.</div></div>
             </div>
         </div>
 
         <h2 class="section-title mt-5">Other local help</h2>
         <ul class="tick-list">
-            <li><strong>Mosaic Multicultural Connections</strong> (Tamworth and Armidale): settlement, family and community services</li>
-            <li><strong>Northern Settlement Services</strong>: settlement support for new arrivals</li>
+            <li><strong><a href="https://www.mosaicmc.org.au" target="_blank" rel="noopener">Mosaic Multicultural Connections</a></strong> (formerly Northern Settlement Services): settlement, family and community services</li>
             <li><strong>Lifeline 13 11 14</strong>: 24-hour crisis support</li>
         </ul>
+    </div>
+</section>
+<section class="section section-soft" id="donate">
+    <div class="container">
+        <div class="row g-4 g-lg-5 align-items-center">
+            <div class="col-lg-6">
+                <p class="eyebrow">Donate</p>
+                <h2 class="section-title">Give to the welfare fund</h2>
+                <p>Every donation helps a member's family through bereavement, illness or hardship. You don't need to be a
+                   member to give. Please use the reference <strong>DONATION</strong> and your name so we can thank you.</p>
+                <!-- UPDATE: change this line if KENEWA becomes a registered charity with tax-deductible (DGR) status -->
+                <p class="note">KENEWA is a not-for-profit association. Donations are not currently tax deductible. Public appeals follow the NSW charitable fundraising rules, and every donation is receipted and goes into the welfare fund's records.</p>
+            </div>
+            <div class="col-lg-6">
+                <!-- UPDATE: when the Treasurer gives you the bank details (the same as in js/config.js),
+                     delete the "pay-pending" box below and remove the word hidden from the box after it. -->
+                <div class="pay-method pay-pending">
+                    <h3>How to give</h3>
+                    <p>We are finishing setting up the welfare fund's bank account. To give now, call or WhatsApp
+                       <a href="tel:+61475140471">0475 140 471</a> and we'll send you the details, or give in person to the
+                       Treasurer, Hillary Bett, and ask for a receipt.</p>
+                    <a href="contact.html?topic=Donation" class="btn btn-gold">Ask how to give</a>
+                </div>
+                <div class="pay-methods pay-methods-2" hidden>
+                    <div class="pay-method"><h3>Bank transfer</h3><dl>
+                        <dt>Account name</dt><dd>Kenyans in New England Welfare Association Inc</dd>
+                        <dt>BSB</dt><dd>000-000</dd><dt>Account number</dt><dd>00000000</dd></dl></div>
+                    <div class="pay-method"><h3>PayID</h3><dl><dt>PayID</dt><dd>PAYID-HERE</dd></dl>
+                        <p class="mb-0 mt-2">Or give in person to the Treasurer, Hillary Bett.</p></div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 </main>
 
 <!-- ===================== CALL TO ACTION ===================== -->
 <section class="cta">
+    
     <div class="container text-center">
-        <p class="eyebrow">Protect your family</p>
-        <h2>We stand with those who <em>stand with us</em></h2>
+        <h2>Protect your family with KENEWA</h2>
         <p>Membership is the key to welfare support. Join today so we can be there when it matters.</p>
         <div class="cta-actions">
             <a href="membership.html" class="btn btn-gold btn-lg">Become a member</a>
-            <span class="cta-or">or</span>
-            <a href="contact.html" class="cta-link">Ask us a question</a>
+            <a href="contact.html" class="btn btn-ghost btn-lg">Ask us a question</a>
         </div>
     </div>
 </section>
@@ -159,46 +309,72 @@
 <footer class="site-footer">
     <div class="container">
         <div class="row g-4">
-            <div class="col-md-5">
+            <div class="col-lg-4">
+                <img src="images/logo-mark.svg" alt="" width="64" height="64" class="footer-logo">
                 <p class="footer-name">Kenyans in New England Welfare Association Inc</p>
+                <p class="footer-motto"><span lang="sw">Umoja ni nguvu</span>: unity is strength</p>
                 <p>A not-for-profit, non-political community association promoting the welfare, unity and
                    empowerment of Kenyans in the New England region of NSW.</p>
                 <p class="footer-reg">Incorporated in NSW under the <em>Associations Incorporation Act 2009</em><br>
                    Registration no. INC2601004 &middot; ABN 17 238 522 745</p>
             </div>
-            <div class="col-6 col-md-3">
-                <p class="footer-head">Explore</p>
+            <div class="col-6 col-md-4 col-lg-2">
+                <p class="footer-head">Quick links</p>
                 <ul class="footer-links">
                     <li><a href="about.html">About us</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="welfare.html">Welfare support</a></li>
                     <li><a href="membership.html">Membership</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="resources.html">Community resources</a></li>
+                    <li><a href="welfare.html">Welfare support</a></li>
+                    <li><a href="login.html">Members portal</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
-            <div class="col-6 col-md-4">
-                <p class="footer-head">Get in touch</p>
+            <div class="col-6 col-md-4 col-lg-3">
+                <p class="footer-head">Portfolios</p>
                 <ul class="footer-links">
-                    <!-- UPDATE with KNEWA's real contact details -->
-                    <li><i class="bi bi-envelope" aria-hidden="true"></i><a href="mailto:secretary@kenewa.org">secretary@kenewa.org</a></li>
-                    <li><i class="bi bi-geo-alt" aria-hidden="true"></i>Tamworth, NSW</li>
-                    <li><i class="bi bi-chat-dots" aria-hidden="true"></i><a href="contact.html">Contact form</a></li>
+                    <li><a href="portfolios.html#welfare">Welfare</a></li>
+                    <li><a href="portfolios.html#women">Women's empowerment</a></li>
+                    <li><a href="portfolios.html#youth">Students and youth</a></li>
+                    <li><a href="portfolios.html#sport">Sport and wellbeing</a></li>
+                    <li><a href="portfolios.html#culture">Culture and events</a></li>
+                    <li><a href="portfolios.html#communications">Communications and IT</a></li>
+                    <li><a href="portfolios.html#partnerships">Partnerships and grants</a></li>
                 </ul>
-                <!-- UPDATE: paste the links to KNEWA's pages in place of each # -->
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <p class="footer-head">Around the web</p>
+                <p>Follow KENEWA for event news, photos and community notices.</p>
                 <ul class="social">
-                    <li><a href="#" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href="#" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a></li>
-                    <li><a href="#" aria-label="TikTok"><i class="bi bi-tiktok" aria-hidden="true"></i></a></li>
-                    <li><a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61593756848950" target="_blank" rel="noopener">Facebook</a></li>
+                    <li><a href="https://wa.me/61475140471" target="_blank" rel="noopener">WhatsApp</a></li>
+                </ul>
+                <p class="footer-head mt-4">Get in touch</p>
+                <ul class="footer-links footer-contact">
+                    <li><a href="mailto:info@kenewa.org">info@kenewa.org</a></li>
+                    <li><a href="tel:+61475140471">0475 140 471</a> (call or <a href="https://wa.me/61475140471" target="_blank" rel="noopener">WhatsApp</a>)</li>
+                    <li>Tamworth and the New England region, NSW</li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
             <span>&copy; <span id="year">2026</span> Kenyans in New England Welfare Association Inc</span>
-            <a href="privacy.html">Privacy policy</a>
+            <span><a href="privacy.html">Privacy policy</a> &middot; <a href="child-safe.html">Child safety</a> &middot; <a href="credits.html">Photo credits</a> &middot; <a href="support.html">Get help</a></span>
         </div>
     </div>
 </footer>
+
+<!-- Floating help button (bottom right of every page) -->
+<a class="help-bubble" href="support.html" aria-label="Get help from KENEWA">
+    <svg viewBox="0 0 48 48" width="34" height="34" aria-hidden="true">
+        <circle cx="24" cy="17" r="8" fill="currentColor"/>
+        <path d="M9 41c1.5-8.5 7.5-13 15-13s13.5 4.5 15 13z" fill="currentColor"/>
+        <path d="M13 19a11 11 0 0 1 22 0" fill="none" stroke="#BBF7D0" stroke-width="3" stroke-linecap="round"/>
+        <rect x="10.5" y="17" width="4.5" height="8" rx="2" fill="#BBF7D0"/>
+        <rect x="33" y="17" width="4.5" height="8" rx="2" fill="#BBF7D0"/>
+    </svg>
+    <span class="help-bubble-label">Need help?</span>
+</a>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/main.js"></script>

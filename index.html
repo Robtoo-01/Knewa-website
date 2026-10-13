@@ -3,33 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KNEWA | Kenyans in New England Welfare Association</title>
-    <meta name="description" content="Kenyans in New England Welfare Association Inc (KNEWA) promotes the welfare, unity and empowerment of Kenyans in the New England region of NSW.">
+    <title>KENEWA | Kenyans in New England Welfare Association</title>
+    <link rel="icon" type="image/svg+xml" href="images/logo-mark.svg">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <meta name="description" content="Kenyans in New England Welfare Association Inc (KENEWA) promotes the welfare, unity and empowerment of Kenyans in the New England region of NSW.">
+    <link rel="canonical" href="https://kenewa.org/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="KENEWA">
+    <meta property="og:title" content="KENEWA | Kenyans in New England Welfare Association">
+    <meta property="og:description" content="Kenyans in New England Welfare Association Inc (KENEWA) promotes the welfare, unity and empowerment of Kenyans in the New England region of NSW.">
+    <meta property="og:url" content="https://kenewa.org/">
+    <meta property="og:image" content="https://kenewa.org/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_AU">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#00753A">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "NGO",
+        "name": "Kenyans in New England Welfare Association Inc",
+        "alternateName": "KENEWA",
+        "url": "https://kenewa.org/",
+        "logo": "https://kenewa.org/images/logo.png",
+        "description": "A not-for-profit, non-political community association promoting the welfare, unity and empowerment of Kenyans in the New England region of NSW.",
+        "email": "info@kenewa.org",
+        "telephone": "+61 475 140 471",
+        "foundingDate": "2026-07-29",
+        "taxID": "17 238 522 745",
+        "areaServed": "New England region, New South Wales, Australia",
+        "address": { "@type": "PostalAddress", "addressLocality": "Tamworth", "addressRegion": "NSW", "addressCountry": "AU" },
+        "sameAs": ["https://www.facebook.com/profile.php?id=61593756848950"]
+    }
+    </script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
 
-    <!-- Bootstrap and icons, then our own styles -->
+    <!-- Bootstrap, then our own styles -->
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 
 <!-- ===================== NAVIGATION ===================== -->
-<nav class="navbar navbar-expand-lg site-nav">
+<nav class="navbar navbar-expand-xl site-nav" aria-label="Main">
     <div class="container">
-        <a class="navbar-brand brand" href="index.html">
-            <span class="brand-mark" aria-hidden="true"></span>
-            <span>
-                <span class="brand-name">KNEWA</span>
-                <span class="brand-sub">Kenyans in New England Welfare Association</span>
-            </span>
+        <a class="navbar-brand brand" href="index.html" aria-label="KENEWA home">
+            <img src="images/logo-mark.svg" alt="" class="brand-logo" width="52" height="52">
+            <span class="brand-text">Kenyans in<br>New England Welfare<br>Association</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#mainMenu" aria-controls="mainMenu"
@@ -37,277 +66,408 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="mainMenu">
-            <ul class="navbar-nav ms-auto align-items-lg-center">
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <ul class="navbar-nav ms-auto align-items-xl-center">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="about.html" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">About us</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item dropdown-overview" href="about.html">About us: overview</a></li>
+                        <li><a class="dropdown-item" href="about.html#mission">Mission, vision and values</a></li>
+                        <li><a class="dropdown-item" href="about.html#leadership">Our leadership</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="portfolios.html" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">Portfolios</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item dropdown-overview" href="portfolios.html">Portfolios: overview</a></li>
+                        <li><a class="dropdown-item" href="portfolios.html#welfare">Welfare</a></li>
+                        <li><a class="dropdown-item" href="portfolios.html#women">Women's empowerment</a></li>
+                        <li><a class="dropdown-item" href="portfolios.html#youth">Students and youth</a></li>
+                        <li><a class="dropdown-item" href="portfolios.html#sport">Sport and wellbeing</a></li>
+                        <li><a class="dropdown-item" href="portfolios.html#culture">Culture and events</a></li>
+                        <li><a class="dropdown-item" href="portfolios.html#communications">Communications and IT</a></li>
+                        <li><a class="dropdown-item" href="portfolios.html#partnerships">Partnerships and grants</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="membership.html" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">Membership</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item dropdown-overview" href="membership.html">Membership: overview</a></li>
+                        <li><a class="dropdown-item" href="membership.html#benefits">Member benefits</a></li>
+                        <li><a class="dropdown-item" href="welfare.html">Welfare support</a></li>
+                    </ul>
+                </li>
                 <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
-                <li class="nav-item"><a class="nav-link" href="welfare.html">Welfare support</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="resources.html" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item dropdown-overview" href="resources.html">Resources: overview</a></li>
+                        <li><a class="dropdown-item" href="resources.html#settling">Settling in</a></li>
+                        <li><a class="dropdown-item" href="resources.html#visas">Visas and official information</a></li>
+                        <li><a class="dropdown-item" href="resources.html#health">Health and wellbeing</a></li>
+                        <li><a class="dropdown-item" href="resources.html#safety">Safety and respect</a></li>
+                        <li><a class="dropdown-item" href="resources.html#study">Study and work</a></li>
+                    </ul>
+                </li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                <li class="nav-item ms-lg-3">
-                    <a class="btn btn-gold" href="membership.html">Join KNEWA</a>
+                <li class="nav-item"><a class="nav-link" href="login.html" data-portal-link>Portal</a></li>
+                <li class="nav-item ms-xl-3 nav-btn">
+                    <a class="btn btn-help btn-sm" href="support.html">Get help</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
 
-<!-- ===================== HERO SLIDER ===================== -->
+<!-- ===================== WELCOME SLIDER ===================== -->
+<!-- To add photos: in css/style.css, see the comment above .slide-1 -->
 <header id="hero" class="carousel slide carousel-fade hero" data-bs-ride="carousel"
-        data-bs-interval="7000" aria-label="Welcome to KNEWA">
-
+        data-bs-interval="7000" aria-label="Welcome to KENEWA">
     <div class="carousel-indicators">
-        <button type="button" data-bs-target="#hero" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1: Community"></button>
+        <button type="button" data-bs-target="#hero" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1: Welcome to KENEWA"></button>
         <button type="button" data-bs-target="#hero" data-bs-slide-to="1"
-                aria-label="Slide 2: New arrivals"></button>
+                aria-label="Slide 2: New to the region?"></button>
         <button type="button" data-bs-target="#hero" data-bs-slide-to="2"
                 aria-label="Slide 3: Welfare support"></button>
+        <button type="button" data-bs-target="#hero" data-bs-slide-to="3"
+                aria-label="Slide 4: Culture and celebration"></button>
+        <button type="button" data-bs-target="#hero" data-bs-slide-to="4"
+                aria-label="Slide 5: Youth, students and women"></button>
     </div>
-
     <div class="carousel-inner">
-
-        <!-- Slide 1 -->
         <div class="carousel-item active slide-1">
             <div class="container hero-content">
-                <p class="eyebrow">Tamworth · Armidale · New England, NSW</p>
-                <h1>Far from home, <em>never</em> alone</h1>
-                <p class="hero-lead">More than a welfare group: KNEWA brings Kenyans across the New England region
-                    together, to stand by each other on the hard days, celebrate the good ones, and contribute
-                    to the community we now call home.</p>
+                <p class="hero-place">Welcome to KENEWA</p>
+                <h1>Celebrating Kenyan heritage in the heart of New England</h1>
+                <p class="hero-lead">We bring Kenyans across Tamworth, Armidale and the region together: standing by each other on the hard days, celebrating the good ones, and building a home here.</p>
                 <div class="hero-actions">
-                    <a href="membership.html" class="btn btn-gold btn-lg">Join us today</a>
-                    <a href="about.html" class="btn btn-ghost btn-lg">Learn more</a>
+                    <a href="membership.html" class="btn btn-gold btn-lg">Take the first step</a>
+                    <a href="about.html" class="btn btn-ghost btn-lg">About us</a>
                 </div>
             </div>
         </div>
 
-        <!-- Slide 2 -->
         <div class="carousel-item slide-2">
             <div class="container hero-content">
-                <p class="eyebrow">Settling in · Networking · Belonging</p>
-                <h1>A familiar <em>welcome</em> in a new town</h1>
-                <p class="hero-lead">Whether you've come for work, study or family, we'll help you find
-                    your feet: people to call, places to go, and a community that already feels like home.</p>
+                <p class="hero-place">New to the region?</p>
+                <h1>A familiar welcome in a new town</h1>
+                <p class="hero-lead">Whether you've come for work, study or family, we'll help you find your feet: people to call, places to go, and a community that already feels like home.</p>
                 <div class="hero-actions">
-                    <a href="contact.html" class="btn btn-gold btn-lg">Say hello</a>
-                    <a href="events.html" class="btn btn-ghost btn-lg">See upcoming events</a>
+                    <a href="resources.html#settling" class="btn btn-gold btn-lg">Settling-in guide</a>
+                    <a href="contact.html" class="btn btn-ghost btn-lg">Say hello</a>
                 </div>
             </div>
         </div>
 
-        <!-- Slide 3 -->
         <div class="carousel-item slide-3">
             <div class="container hero-content">
-                <p class="eyebrow">Bereavement · Illness · Hardship</p>
-                <h1>When one family struggles, <em>we all</em> show up</h1>
-                <p class="hero-lead">Every member contributes to the KNEWA welfare fund, so that in bereavement,
-                    illness or hardship, help is ready and nobody carries it alone.</p>
+                <p class="hero-place">Welfare support</p>
+                <h1>When one family struggles, we all show up</h1>
+                <p class="hero-lead">Our welfare fund means that in bereavement, illness or hardship, help is ready and nobody carries it alone.</p>
                 <div class="hero-actions">
                     <a href="welfare.html" class="btn btn-gold btn-lg">How support works</a>
-                    <a href="membership.html" class="btn btn-ghost btn-lg">Join KNEWA</a>
+                    <a href="membership.html" class="btn btn-ghost btn-lg">Become a member</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item slide-4">
+            <div class="container hero-content">
+                <p class="hero-place">Culture and celebration</p>
+                <h1>Madaraka, Mashujaa, Jamhuri: we celebrate together</h1>
+                <p class="hero-lead">Food, music, dance and our languages, shared with our children and our New England neighbours.</p>
+                <div class="hero-actions">
+                    <a href="events.html" class="btn btn-gold btn-lg">See upcoming events</a>
+                    <a href="portfolios.html#culture" class="btn btn-ghost btn-lg">Culture and events</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item slide-5">
+            <div class="container hero-content">
+                <p class="hero-place">Youth, students and women</p>
+                <h1>Raising the next generation of leaders</h1>
+                <p class="hero-lead">Mentoring for young people, a welcome for international students, and a strong women's network with savings circles in the chama tradition.</p>
+                <div class="hero-actions">
+                    <a href="portfolios.html" class="btn btn-gold btn-lg">Our portfolios</a>
+                    <a href="contact.html?topic=Volunteering" class="btn btn-ghost btn-lg">Get involved</a>
                 </div>
             </div>
         </div>
     </div>
-
-    <a href="#numbers" class="scroll-cue">Scroll</a>
+    <img class="hero-emblem" src="images/logo-mark.svg" alt="" aria-hidden="true" width="420" height="420">
+    <div class="flag-stripe" aria-hidden="true"></div>
 </header>
 
-<!-- ===================== NUMBERS ===================== -->
-<!-- UPDATE these figures as the association grows. data-count is the number the counter animates to. -->
-<section class="numbers" id="numbers" aria-label="KNEWA in numbers">
-    <div class="container">
-        <div class="stats-card">
-            <div class="row text-center g-4">
-                <div class="col-6 col-lg-3 stat">
-                    <p class="num"><span data-count="12">12</span></p>
-                    <p class="num-label">Founding members</p>
-                </div>
-                <div class="col-6 col-lg-3 stat">
-                    <p class="num"><span data-count="14">14</span></p>
-                    <p class="num-label">Volunteer committee</p>
-                </div>
-                <div class="col-6 col-lg-3 stat">
-                    <p class="num">2026</p>
-                    <p class="num-label">Incorporated in NSW</p>
-                </div>
-                <div class="col-6 col-lg-3 stat">
-                    <p class="num"><span data-count="3">3</span></p>
-                    <p class="num-label">Kenyan national days</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<main id="main">
 
-<!-- ===================== FOUNDING PROMISE & VALUES ===================== -->
-<section class="promise">
-    <div class="container">
-        <div class="text-center"><p class="eyebrow">Our founding promise</p></div>
-        <blockquote class="promise-quote">
-            <p>A united, inclusive and thriving Kenyan community that supports one another
-               and contributes positively to Australian society.</p>
-        </blockquote>
-        <p class="promise-by">Kenyans in New England Welfare Association, est. 2026</p>
-        <p class="mission"><strong>Our mission</strong> is to promote the welfare, unity and empowerment of
-           Kenyans in the New England region through mutual support, community engagement,
-           cultural preservation and collaboration.</p>
-
-        <div class="row g-4 mt-4">
-            <div class="col-sm-6 col-lg-3">
-                <div class="value-card">
-                    <span class="value-icon" aria-hidden="true"><i class="bi bi-people-fill"></i></span>
-                    <h3>Umoja</h3>
-                    <p class="value-en">Unity</p>
-                    <p>One community across every town and background.</p>
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-3">
-                <div class="value-card">
-                    <span class="value-icon" aria-hidden="true"><i class="bi bi-heart-fill"></i></span>
-                    <h3>Upendo</h3>
-                    <p class="value-en">Care</p>
-                    <p>We look out for one another, especially when it's hard.</p>
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-3">
-                <div class="value-card">
-                    <span class="value-icon" aria-hidden="true"><i class="bi bi-hand-thumbs-up-fill"></i></span>
-                    <h3>Heshima</h3>
-                    <p class="value-en">Respect</p>
-                    <p>For every member, elder, culture and neighbour.</p>
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-3">
-                <div class="value-card">
-                    <span class="value-icon" aria-hidden="true"><i class="bi bi-shield-check"></i></span>
-                    <h3>Uaminifu</h3>
-                    <p class="value-en">Integrity</p>
-                    <p>Open, accountable handling of members' contributions.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ===================== WHY JOIN ===================== -->
-<section class="why">
+<!-- ===================== FROM OUR LEADERSHIP ===================== -->
+<section class="section section-soft leadership">
     <div class="container">
         <div class="row g-4 g-lg-5">
-            <div class="col-lg-4">
-                <div class="why-intro">
-                    <p class="eyebrow">Why join KNEWA</p>
-                    <h2 class="section-title">More than membership, it's <em>belonging</em></h2>
-                    <p>Membership means people who know you, a plan for when life gets hard, and plenty
-                       to celebrate along the way. Here's what you gain when you join.</p>
-                    <a href="membership.html" class="btn btn-forest btn-lg mt-2">Become a member</a>
+            <div class="col-lg-3">
+                <h2 class="leadership-title">From our leadership</h2>
+                <a href="about.html#leadership" class="btn btn-gold mt-2">Meet the committee</a>
+            </div>
+            <div class="col-lg-6">
+                <h3 class="leader-heading">Message from the Chairperson</h3>
+                <!-- UPDATE: draft message. Please have the Chairperson read, change and approve it before publishing. -->
+                <div class="leader-message">
+                    <p><span lang="sw">Karibu</span>, and welcome to the Kenyans in New England Welfare Association.</p>
+                    <p>KENEWA began with twelve of us around a table in East Tamworth, agreeing that no Kenyan family in
+                       this region should face life's hardest moments alone. In July 2026 we became an incorporated
+                       association, and since then your committee has been turning that promise into something real.</p>
+                    <p>Our welfare fund is now open to members, so that when bereavement, illness or hardship strikes,
+                       help is ready. Our new members portal lets you join, register your family, pay your fees and ask
+                       for support from your phone, and welfare members can now vote online on the decisions that shape
+                       the association. We are preparing our first grant applications, and we will celebrate our first
+                       Jamhuri Day as an incorporated association on 12 December in Tamworth.</p>
+                    <p>None of this works without you. Whether you have lived in New England for twenty years or arrived
+                       last week, whether you are Kenyan, have Kenyan family, or simply share our values, I warmly invite
+                       you to join us today: as a free community member, or as a welfare member standing with every
+                       family in its hardest moments. <span lang="sw">Umoja ni nguvu</span>: together we are stronger.</p>
+                </div>
+                <p class="signature"><span lang="sw">Asanteni sana</span>,<br><strong>Edwin Ng’etich</strong><br>Chairperson</p>
+                <div class="hero-actions mt-3">
+                    <a href="login.html#signup" class="btn btn-gold">Join KENEWA today</a>
+                    <a href="membership.html" class="btn btn-outline-ink">Compare memberships</a>
                 </div>
             </div>
-            <div class="col-lg-8">
-                <div class="benefits">
-                    <article class="benefit">
-                        <span class="benefit-icon" aria-hidden="true"><i class="bi bi-life-preserver"></i></span>
-                        <h3>Welfare in hard times</h3>
-                        <p>Members contribute to a welfare fund that supports families through bereavement,
-                           including funeral and repatriation costs, serious illness and emergencies.</p>
-                    </article>
-                    <article class="benefit">
-                        <span class="benefit-icon" aria-hidden="true"><i class="bi bi-house-heart"></i></span>
-                        <h3>A welcome for new arrivals</h3>
-                        <p>Help settling in: housing, jobs, Medicare and Centrelink, licences, schools,
-                           and introductions to local settlement services.</p>
-                    </article>
-                    <article class="benefit">
-                        <span class="benefit-icon" aria-hidden="true"><i class="bi bi-music-note-beamed"></i></span>
-                        <h3>Culture and national days</h3>
-                        <p>Madaraka Day, Mashujaa Day and Jamhuri Day celebrations, and Kenyan food, music
-                           and language shared with our children and neighbours.</p>
-                    </article>
-                    <article class="benefit">
-                        <span class="benefit-icon" aria-hidden="true"><i class="bi bi-mortarboard"></i></span>
-                        <h3>Students and youth</h3>
-                        <p>A student representative on the committee, orientation for international students,
-                           and mentoring for young Kenyan-Australians.</p>
-                    </article>
-                    <article class="benefit">
-                        <span class="benefit-icon" aria-hidden="true"><i class="bi bi-flower1"></i></span>
-                        <h3>Women's empowerment</h3>
-                        <p>A dedicated committee role and space for women to support each other, including
-                           savings and investment circles in the chama tradition.</p>
-                    </article>
-                    <article class="benefit">
-                        <span class="benefit-icon" aria-hidden="true"><i class="bi bi-trophy"></i></span>
-                        <h3>Sport, wellbeing and networking</h3>
-                        <p>Sports days, mental health and wellbeing sessions, and a network for careers,
-                           education and business across the region.</p>
-                    </article>
+            <div class="col-lg-3">
+                <div class="leader-photo" aria-hidden="true">
+                    <!-- UPDATE: replace this block with <img src="images/chairperson.jpg" alt="Edwin Ng'etich, KENEWA Chairperson"> -->
+                    <span>EN</span>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- ===================== CALL TO ACTION ===================== -->
-<section class="cta">
-    <div class="container text-center">
-        <p class="eyebrow">Take the first step</p>
-        <h2>Ready to join the KNEWA <em>family</em>?</h2>
-        <p>Membership is open to Kenyans living in or connected with the New England region who support
-           the association's objectives. Joining takes a few minutes.</p>
-        <div class="cta-actions">
-            <a href="membership.html" class="btn btn-gold btn-lg">Become a member</a>
-            <span class="cta-or">or</span>
-            <a href="about.html" class="cta-link">Learn more about us</a>
+<!-- ===================== SIGNATURE EVENT ===================== -->
+<section class="signature-event" data-feature-event>
+    <div class="container">
+        <div class="row g-4 align-items-center">
+            <div class="col-lg-7">
+                <p class="eyebrow">Our signature event</p>
+                <h2>Jamhuri Day 2026</h2>
+                <p class="lead">Our first Jamhuri Day together as an incorporated association: nyama choma, music, dance,
+                   games for the children and the whole KENEWA family, with friends from across New England welcome.</p>
+                <p class="event-when"><strong>Saturday 12 December 2026</strong> &middot; Tamworth (venue to be confirmed)</p>
+                <div class="hero-actions">
+                    <a href="events.html" class="btn btn-gold btn-lg">All events</a>
+                    <a href="events.html#jamhuri-2026" class="btn btn-ghost btn-lg">Event details</a>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="countdown" data-countdown="2026-12-12" aria-live="off" hidden>
+                    <p class="countdown-label">Countdown to Jamhuri Day</p>
+                    <div class="countdown-grid">
+                        <div><span data-unit="days">--</span><small>days</small></div>
+                        <div><span data-unit="hours">--</span><small>hours</small></div>
+                        <div><span data-unit="minutes">--</span><small>minutes</small></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
+
+<!-- ===================== OUR OBJECTIVES ===================== -->
+<section class="section">
+    <div class="container">
+        <div class="section-head text-center">
+            <p class="eyebrow">Why we exist</p>
+            <h2 class="section-title">Our objectives</h2>
+        </div>
+        <div class="row g-4 objectives">
+            <div class="col-sm-6 col-lg-3"><article class="objective">
+                <h3>Unity</h3>
+                <p>Bring Kenyans across New England together, whatever their town, background or story.</p></article></div>
+            <div class="col-sm-6 col-lg-3"><article class="objective">
+                <h3>Welfare</h3>
+                <p>Stand by members in bereavement, illness and hardship through a shared welfare fund.</p></article></div>
+            <div class="col-sm-6 col-lg-3"><article class="objective">
+                <h3>Culture and belonging</h3>
+                <p>Keep Kenyan culture and language alive while embracing life in Australia.</p></article></div>
+            <div class="col-sm-6 col-lg-3"><article class="objective">
+                <h3>Growth</h3>
+                <p>Welcome new arrivals and open doors to education, networking, jobs and wellbeing.</p></article></div>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== NUMBERS ===================== -->
+<!-- UPDATE these figures as the association grows -->
+<section class="numbers" aria-label="KENEWA in numbers">
+    <div class="container">
+        <div class="row text-center g-4">
+            <div class="col-6 col-lg-3"><p class="num">12</p><p class="num-label">Founding members</p></div>
+            <div class="col-6 col-lg-3"><p class="num">2026</p><p class="num-label">Incorporated in NSW</p></div>
+            <div class="col-6 col-lg-3"><p class="num">9</p><p class="num-label">Volunteer committee members</p></div>
+            <div class="col-6 col-lg-3"><p class="num">7</p><p class="num-label">Portfolios serving members</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== MOMENTS / GALLERY ===================== -->
+<section class="section section-soft">
+    <div class="container">
+        <div class="section-head d-flex flex-wrap justify-content-between align-items-end gap-3">
+            <div>
+                <p class="eyebrow">Moments</p>
+                <h2 class="section-title mb-0">Our community in pictures</h2>
+            </div>
+            <a href="contact.html?topic=Photos" class="btn btn-outline-ink">Share your photos</a>
+        </div>
+        <!-- Stock photos from Unsplash (see credits.html) until KENEWA's own photos are ready. To use your own:
+             <figure class="tile"><img src="images/jamhuri-2026-1.jpg" alt="Families dancing at Jamhuri Day 2026" loading="lazy"><figcaption>Jamhuri Day 2026</figcaption></figure> -->
+        <div class="gallery">
+            <figure class="tile"><img src="https://images.unsplash.com/photo-1704494785161-ebc171cf82a1?auto=format&fit=crop&w=900&q=70" alt="Community gathered outdoors" loading="lazy"><figcaption>Coming together</figcaption></figure>
+            <figure class="tile"><img src="https://images.unsplash.com/photo-1769708046949-108aa733f753?auto=format&fit=crop&w=900&q=70" alt="Fans waving Kenyan flags at a sporting event" loading="lazy"><figcaption>Cheering on Kenya</figcaption></figure>
+            <figure class="tile"><img src="https://images.unsplash.com/photo-1764683062271-254626b07433?auto=format&fit=crop&w=900&q=70" alt="Young people dancing together" loading="lazy"><figcaption>Music and dance</figcaption></figure>
+            <figure class="tile"><img src="https://images.unsplash.com/photo-1580394640019-00d34094ae13?auto=format&fit=crop&w=900&q=70" alt="Woman in traditional dress" loading="lazy"><figcaption>Culture and heritage</figcaption></figure>
+            <figure class="tile"><img src="https://images.unsplash.com/photo-1652665314612-c48e10a01598?auto=format&fit=crop&w=900&q=70" alt="Young men playing a game of football" loading="lazy"><figcaption>Sport and wellbeing</figcaption></figure>
+            <figure class="tile"><img src="https://images.unsplash.com/photo-1597524678053-5e6fef52d8a3?auto=format&fit=crop&w=900&q=70" alt="A family on a beach, a baby on his father's shoulders" loading="lazy"><figcaption>Family days</figcaption></figure>
+        </div>
+        <p class="note">Illustrative photos from <a href="credits.html">Unsplash</a> for now. Our own photos from KENEWA gatherings will appear here soon. Please only share photos you have permission to share.</p>
+    </div>
+</section>
+
+<!-- ===================== DONATE ===================== -->
+<section class="donate-band">
+    <div class="container">
+        <div class="row g-4 align-items-center">
+            <div class="col-lg-8">
+                <h2>Stand with a family in need</h2>
+                <p>When a member's family faces bereavement, serious illness or sudden hardship, the KENEWA welfare fund
+                   is there. Donations from members, friends and local businesses help us respond quickly, the
+                   <span lang="sw">harambee</span> way.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <a href="welfare.html#donate" class="btn btn-gold btn-lg">Donate</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== TWO WAYS TO JOIN ===================== -->
+<section class="section join-paths" id="ways">
+    <div class="container">
+        <div class="section-head text-center">
+            <h2 class="section-title">Wish to become a member?</h2>
+            <p class="lead-narrow mx-auto">Choose the membership that suits you. Both start with a free members portal account.</p>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-5">
+                <article class="path-card">
+                    <p class="path-price">Free</p>
+                    <h3>Community membership</h3>
+                    <p>For Kenyans, their families and friends of our community who want to stay connected.</p>
+                    <ul class="tick-list">
+                        <li>News, notices and the members' WhatsApp group</li>
+                        <li>Invitations to every KENEWA event</li>
+                        <li>Access to the members portal</li>
+                    </ul>
+                    <a href="login.html#signup" class="btn btn-outline-ink btn-lg">Join for free</a>
+                </article>
+            </div>
+            <div class="col-md-6 col-lg-5">
+                <article class="path-card path-featured">
+                    <p class="path-price">$200 <span>to join</span></p>
+                    <h3>Welfare membership</h3>
+                    <p>Financial membership with welfare fund cover for you and your registered family.</p>
+                    <ul class="tick-list">
+                        <li>Support in bereavement, illness and hardship</li>
+                        <li>A vote at general meetings and a say in the welfare fund</li>
+                        <li>Everything in community membership</li>
+                    </ul>
+                    <a href="membership.html" class="btn btn-gold btn-lg">Become a welfare member</a>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
 
 <!-- ===================== FOOTER ===================== -->
 <footer class="site-footer">
     <div class="container">
         <div class="row g-4">
-            <div class="col-md-5">
+            <div class="col-lg-4">
+                <img src="images/logo-mark.svg" alt="" width="64" height="64" class="footer-logo">
                 <p class="footer-name">Kenyans in New England Welfare Association Inc</p>
+                <p class="footer-motto"><span lang="sw">Umoja ni nguvu</span>: unity is strength</p>
                 <p>A not-for-profit, non-political community association promoting the welfare, unity and
                    empowerment of Kenyans in the New England region of NSW.</p>
                 <p class="footer-reg">Incorporated in NSW under the <em>Associations Incorporation Act 2009</em><br>
                    Registration no. INC2601004 &middot; ABN 17 238 522 745</p>
             </div>
-            <div class="col-6 col-md-3">
-                <p class="footer-head">Explore</p>
+            <div class="col-6 col-md-4 col-lg-2">
+                <p class="footer-head">Quick links</p>
                 <ul class="footer-links">
                     <li><a href="about.html">About us</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="welfare.html">Welfare support</a></li>
                     <li><a href="membership.html">Membership</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="resources.html">Community resources</a></li>
+                    <li><a href="welfare.html">Welfare support</a></li>
+                    <li><a href="login.html">Members portal</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
-            <div class="col-6 col-md-4">
-                <p class="footer-head">Get in touch</p>
+            <div class="col-6 col-md-4 col-lg-3">
+                <p class="footer-head">Portfolios</p>
                 <ul class="footer-links">
-                    <!-- UPDATE with KNEWA's real contact details -->
-                    <li><i class="bi bi-envelope" aria-hidden="true"></i><a href="mailto:secretary@kenewa.org">secretary@kenewa.org</a></li>
-                    <li><i class="bi bi-geo-alt" aria-hidden="true"></i>Tamworth, NSW</li>
-                    <li><i class="bi bi-chat-dots" aria-hidden="true"></i><a href="contact.html">Contact form</a></li>
+                    <li><a href="portfolios.html#welfare">Welfare</a></li>
+                    <li><a href="portfolios.html#women">Women's empowerment</a></li>
+                    <li><a href="portfolios.html#youth">Students and youth</a></li>
+                    <li><a href="portfolios.html#sport">Sport and wellbeing</a></li>
+                    <li><a href="portfolios.html#culture">Culture and events</a></li>
+                    <li><a href="portfolios.html#communications">Communications and IT</a></li>
+                    <li><a href="portfolios.html#partnerships">Partnerships and grants</a></li>
                 </ul>
-                <!-- UPDATE: paste the links to KNEWA's pages in place of each # -->
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <p class="footer-head">Around the web</p>
+                <p>Follow KENEWA for event news, photos and community notices.</p>
                 <ul class="social">
-                    <li><a href="#" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href="#" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a></li>
-                    <li><a href="#" aria-label="TikTok"><i class="bi bi-tiktok" aria-hidden="true"></i></a></li>
-                    <li><a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61593756848950" target="_blank" rel="noopener">Facebook</a></li>
+                    <li><a href="https://wa.me/61475140471" target="_blank" rel="noopener">WhatsApp</a></li>
+                </ul>
+                <p class="footer-head mt-4">Get in touch</p>
+                <ul class="footer-links footer-contact">
+                    <li><a href="mailto:info@kenewa.org">info@kenewa.org</a></li>
+                    <li><a href="tel:+61475140471">0475 140 471</a> (call or <a href="https://wa.me/61475140471" target="_blank" rel="noopener">WhatsApp</a>)</li>
+                    <li>Tamworth and the New England region, NSW</li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
             <span>&copy; <span id="year">2026</span> Kenyans in New England Welfare Association Inc</span>
-            <a href="privacy.html">Privacy policy</a>
+            <span><a href="privacy.html">Privacy policy</a> &middot; <a href="child-safe.html">Child safety</a> &middot; <a href="credits.html">Photo credits</a> &middot; <a href="support.html">Get help</a></span>
         </div>
     </div>
 </footer>
 
+<!-- Floating help button (bottom right of every page) -->
+<a class="help-bubble" href="support.html" aria-label="Get help from KENEWA">
+    <svg viewBox="0 0 48 48" width="34" height="34" aria-hidden="true">
+        <circle cx="24" cy="17" r="8" fill="currentColor"/>
+        <path d="M9 41c1.5-8.5 7.5-13 15-13s13.5 4.5 15 13z" fill="currentColor"/>
+        <path d="M13 19a11 11 0 0 1 22 0" fill="none" stroke="#BBF7D0" stroke-width="3" stroke-linecap="round"/>
+        <rect x="10.5" y="17" width="4.5" height="8" rx="2" fill="#BBF7D0"/>
+        <rect x="33" y="17" width="4.5" height="8" rx="2" fill="#BBF7D0"/>
+    </svg>
+    <span class="help-bubble-label">Need help?</span>
+</a>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/events-data.js"></script>
+<script src="js/events.js"></script>
 </body>
 </html>

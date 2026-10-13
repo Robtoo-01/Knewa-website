@@ -3,33 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Membership | KNEWA</title>
-    <meta name="description" content="Join KNEWA: who can join, benefits, fees and the membership form.">
+    <title>Membership | KENEWA</title>
+    <link rel="icon" type="image/svg+xml" href="images/logo-mark.svg">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <meta name="description" content="Join KENEWA: free community membership or welfare membership, how to join, fees and member benefits.">
+    <link rel="canonical" href="https://kenewa.org/membership">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="KENEWA">
+    <meta property="og:title" content="Membership | KENEWA">
+    <meta property="og:description" content="Join KENEWA: free community membership or welfare membership, how to join, fees and member benefits.">
+    <meta property="og:url" content="https://kenewa.org/membership">
+    <meta property="og:image" content="https://kenewa.org/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_AU">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#00753A">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
 
-    <!-- Bootstrap and icons, then our own styles -->
+    <!-- Bootstrap, then our own styles -->
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 
 <!-- ===================== NAVIGATION ===================== -->
-<nav class="navbar navbar-expand-lg site-nav">
+<nav class="navbar navbar-expand-xl site-nav" aria-label="Main">
     <div class="container">
-        <a class="navbar-brand brand" href="index.html">
-            <span class="brand-mark" aria-hidden="true"></span>
-            <span>
-                <span class="brand-name">KNEWA</span>
-                <span class="brand-sub">Kenyans in New England Welfare Association</span>
-            </span>
+        <a class="navbar-brand brand" href="index.html" aria-label="KENEWA home">
+            <img src="images/logo-mark.svg" alt="" class="brand-logo" width="52" height="52">
+            <span class="brand-text">Kenyans in<br>New England Welfare<br>Association</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#mainMenu" aria-controls="mainMenu"
@@ -37,14 +47,56 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="mainMenu">
-            <ul class="navbar-nav ms-auto align-items-lg-center">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <ul class="navbar-nav ms-auto align-items-xl-center">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="about.html" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">About us</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item dropdown-overview" href="about.html">About us: overview</a></li>
+                        <li><a class="dropdown-item" href="about.html#mission">Mission, vision and values</a></li>
+                        <li><a class="dropdown-item" href="about.html#leadership">Our leadership</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="portfolios.html" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">Portfolios</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item dropdown-overview" href="portfolios.html">Portfolios: overview</a></li>
+                        <li><a class="dropdown-item" href="portfolios.html#welfare">Welfare</a></li>
+                        <li><a class="dropdown-item" href="portfolios.html#women">Women's empowerment</a></li>
+                        <li><a class="dropdown-item" href="portfolios.html#youth">Students and youth</a></li>
+                        <li><a class="dropdown-item" href="portfolios.html#sport">Sport and wellbeing</a></li>
+                        <li><a class="dropdown-item" href="portfolios.html#culture">Culture and events</a></li>
+                        <li><a class="dropdown-item" href="portfolios.html#communications">Communications and IT</a></li>
+                        <li><a class="dropdown-item" href="portfolios.html#partnerships">Partnerships and grants</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" aria-current="page" href="membership.html" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">Membership</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item dropdown-overview" href="membership.html">Membership: overview</a></li>
+                        <li><a class="dropdown-item" href="membership.html#benefits">Member benefits</a></li>
+                        <li><a class="dropdown-item" href="welfare.html">Welfare support</a></li>
+                    </ul>
+                </li>
                 <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
-                <li class="nav-item"><a class="nav-link" href="welfare.html">Welfare support</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="resources.html" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item dropdown-overview" href="resources.html">Resources: overview</a></li>
+                        <li><a class="dropdown-item" href="resources.html#settling">Settling in</a></li>
+                        <li><a class="dropdown-item" href="resources.html#visas">Visas and official information</a></li>
+                        <li><a class="dropdown-item" href="resources.html#health">Health and wellbeing</a></li>
+                        <li><a class="dropdown-item" href="resources.html#safety">Safety and respect</a></li>
+                        <li><a class="dropdown-item" href="resources.html#study">Study and work</a></li>
+                    </ul>
+                </li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                <li class="nav-item ms-lg-3">
-                    <a class="btn btn-gold" href="membership.html">Join KNEWA</a>
+                <li class="nav-item"><a class="nav-link" href="login.html" data-portal-link>Portal</a></li>
+                <li class="nav-item ms-xl-3 nav-btn">
+                    <a class="btn btn-help btn-sm" href="support.html">Get help</a>
                 </li>
             </ul>
         </div>
@@ -52,159 +104,278 @@
 </nav>
 
 <!-- ===================== PAGE BANNER ===================== -->
-<header class="page-hero">
+<!-- Banner photo from Unsplash (see credits.html). To use your own: images/your-photo.jpg -->
+<header class="page-hero" style="--banner-photo: url('https://images.unsplash.com/photo-1533659124865-d6072dc035e1?auto=format&fit=crop&w=1800&q=70')">
     <div class="container">
-        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span>Membership</nav>
-        <p class="eyebrow">Join KNEWA</p>
-        <h1>Join the KNEWA <em>family</em></h1>
-        <p class="hero-lead">Join the Kenyan community of the New England region: welfare support when you need it, a vote in how KNEWA is run, and people who have your back.</p>
+        <p class="hero-place">Membership</p>
+        <h1>Join the KENEWA family</h1>
+        <p class="hero-lead">Welfare support when you need it, a vote in how KENEWA is run, and people who have your back.</p>
     </div>
+    <div class="flag-stripe" aria-hidden="true"></div>
 </header>
 
-<main>
-<section class="section">
+<main id="main">
+
+<!-- ===================== TWO WAYS TO JOIN ===================== -->
+<section class="section join-paths" id="ways">
+    <div class="container">
+        <div class="section-head text-center">
+            <h2 class="section-title">Two ways to join</h2>
+            <p class="lead-narrow mx-auto">Choose the membership that suits you. Both start with a free members portal account.</p>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-5">
+                <article class="path-card">
+                    <p class="path-price">Free</p>
+                    <h3>Community membership</h3>
+                    <p>For Kenyans, their families and friends of our community who want to stay connected.</p>
+                    <ul class="tick-list">
+                        <li>News, notices and the members' WhatsApp group</li>
+                        <li>Invitations to every KENEWA event</li>
+                        <li>Access to the members portal</li>
+                    </ul>
+                    <a href="login.html#signup" class="btn btn-outline-ink btn-lg">Join for free</a>
+                </article>
+            </div>
+            <div class="col-md-6 col-lg-5">
+                <article class="path-card path-featured">
+                    <p class="path-price">$200 <span>to join</span></p>
+                    <h3>Welfare membership</h3>
+                    <p>Financial membership with welfare fund cover for you and your registered family.</p>
+                    <ul class="tick-list">
+                        <li>Support in bereavement, illness and hardship</li>
+                        <li>A vote at general meetings and a say in the welfare fund</li>
+                        <li>Everything in community membership</li>
+                    </ul>
+                    <a href="login.html#signup" class="btn btn-gold btn-lg">Become a welfare member</a>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-soft">
     <div class="container">
         <div class="row g-4 g-lg-5">
-            <div class="col-lg-5 prose">
-                <p class="eyebrow">Membership</p>
-                <h2 class="section-title">Who can <em>join</em></h2>
+            <div class="col-lg-6 prose">
+                <h2 class="section-title">Who can join</h2>
                 <p>Membership is open to Kenyans living in or connected with the New England region who support the
-                   association's objectives. Financial members must be 18 or over; people under 18 can join with a
-                   parent or guardian's written consent.</p>
+                   association's objectives. Anyone aged 18 or over can apply for welfare (financial) membership. People
+                   under 18 can apply with a parent or guardian's written consent, on terms the committee sets.</p>
                 <h3 class="h5 mt-4">Types of membership</h3>
                 <ul class="tick-list">
-                    <li><strong>Financial member:</strong> pays the joining fees, can vote at general meetings, stand for the committee and receive welfare support.</li>
+                    <li><strong>Welfare (financial) member:</strong> pays the joining fees, can vote at general meetings, stand for the committee and receive welfare support.</li>
                     <li><strong>Community member:</strong> free. Receives news and can attend events, but cannot vote or hold office.</li>
-                    <li><strong>Life and honorary members:</strong> recognised by the association for outstanding service.</li>
+                    <li><strong>Life members:</strong> recognised by a general meeting for outstanding service. They have the same rights as welfare members and pay no fees.</li>
+                    <li><strong>Honorary members:</strong> invited by the committee in recognition of service. They can attend and speak at general meetings, but cannot vote or hold office.</li>
                 </ul>
-
-                <h2 class="section-title mt-5">What you get</h2>
-                <ul class="tick-list">
-                    <li>Welfare fund support in times of need</li>
-                    <li>A vote at the Annual General Meeting</li>
-                    <li>First news of events and opportunities</li>
-                    <li>A welcoming network across the region</li>
-                </ul>
+                <p class="note">The full rules are in our <a href="docs/kenewa-constitution.pdf">constitution</a> (PDF).</p>
 
                 <h2 class="section-title mt-5">Fees</h2>
-                <!-- Fees agreed at the committee meeting of 23 August 2026 (to be finalised). UPDATE if they change. -->
+                <!-- Fees from clause 13.2 of the constitution. UPDATE if a general meeting changes them. -->
                 <table class="fees">
                     <tr><th scope="row">Registration fee</th><td>$30</td></tr>
                     <tr><th scope="row">Welfare fund contribution</th><td>$170</td></tr>
-                    <tr class="fees-total"><th scope="row">Total for new members</th><td>$200</td></tr>
+                    <tr class="fees-total"><th scope="row">Total to join as a welfare member</th><td>$200</td></tr>
+                    <tr><th scope="row">Annual renewal (each year after that)</th><td>$170</td></tr>
                     <tr><th scope="row">Community membership</th><td>Free</td></tr>
                 </table>
-                <p class="note">Payment details are sent after your application is received.</p>
+                <h3 class="h5 mt-4">Renewing your membership</h3>
+                <p>Welfare membership lasts 12 months from the day the Treasurer confirms your payment. We'll send you a
+                   reminder before it's due. The whole $170 renewal fee goes into the welfare fund.</p>
+                <p>If your renewal is more than 3 months late, you can't vote at general meetings, and welfare support and
+                   member services pause until you pay. If money is tight, talk to the committee: they can make exceptions
+                   in cases of hardship.</p>
+                <!-- UPDATE: only after members approve the Special Welfare Levy at a General Meeting, remove the comment marks:
+                <p class="note">Members have also agreed that welfare members may be asked for a Special Welfare Levy of up to
+                   $50 when a member's family needs help with a bereavement or repatriation, no more than twice a year.
+                   The Treasurer can waive it, in confidence, for members in hardship.</p> -->
+                <p class="note">Welfare support starts once your membership has been current for 3 months, except for a
+                   bereavement or life-threatening emergency. See <a href="welfare.html">Welfare support</a>.</p>
             </div>
-
-            <div class="col-lg-7">
-                <div class="form-card">
-                    <h2 class="h3 mb-3">Membership application</h2>
-                    <form name="membership" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field">
-                        <p class="d-none"><label>Leave this empty: <input name="bot-field"></label></p>
-
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <label for="m-first" class="form-label">First name</label>
-                                <input type="text" id="m-first" name="first-name" class="form-control" required autocomplete="given-name">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="m-last" class="form-label">Last name</label>
-                                <input type="text" id="m-last" name="last-name" class="form-control" required autocomplete="family-name">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="m-email" class="form-label">Email</label>
-                                <input type="email" id="m-email" name="email" class="form-control" required autocomplete="email">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="m-phone" class="form-label">Mobile</label>
-                                <input type="tel" id="m-phone" name="phone" class="form-control" required autocomplete="tel">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="m-town" class="form-label">Town you live in</label>
-                                <input type="text" id="m-town" name="town" class="form-control" required placeholder="e.g. Tamworth">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="m-type" class="form-label">Membership type</label>
-                                <select id="m-type" name="membership-type" class="form-select">
-                                    <option>Financial member ($200 to join)</option>
-                                    <option>Community member (free)</option>
-                                </select>
-                            </div>
-                            <div class="col-12">
-                                <label for="m-family" class="form-label">Family members to register (optional)</label>
-                                <textarea id="m-family" name="family-members" rows="3" class="form-control" placeholder="Name and relationship, one per line"></textarea>
-                            </div>
-                            <div class="col-12">
-                                <label for="m-hear" class="form-label">How did you hear about us? (optional)</label>
-                                <input type="text" id="m-hear" name="heard-about-us" class="form-control">
-                            </div>
-                            <div class="col-12">
-                                <div class="form-check">
-                                    <input type="checkbox" id="m-agree" name="agree-constitution" class="form-check-input" required>
-                                    <label for="m-agree" class="form-check-label">I support KNEWA's objectives and agree to follow its constitution.</label>
-                                </div>
-                                <div class="form-check mt-2">
-                                    <input type="checkbox" id="m-privacy" name="privacy-consent" class="form-check-input" required>
-                                    <label for="m-privacy" class="form-check-label">I agree to KNEWA using these details to manage my membership, as described in the <a href="privacy.html">Privacy policy</a>.</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <button type="submit" class="btn btn-gold btn-lg">Send application</button>
-                            </div>
-                        </div>
-                    </form>
+            <div class="col-lg-6">
+                <h2 class="section-title">How to become a member</h2>
+                <ol class="steps">
+                    <li><h3>Check you're eligible</h3><p>Read who can join on this page, and decide whether you want financial or community membership.</p></li>
+                    <li><h3>Create your account and choose your membership</h3><p>Sign up with your name, email, mobile and a password, and confirm your email address. The first thing you'll be asked is whether you want welfare or community membership.</p></li>
+                    <li><h3>Complete your registration</h3><p>In the members area, fill in your details and next of kin.</p></li>
+                    <li><h3>Register your family</h3><p>Financial members add up to 1 spouse, 7 dependants and 7 siblings, then confirm the list. Your first list is approved automatically; later additions, changes or removals are checked by the committee.</p></li>
+                    <li><h3>Pay and record your fees</h3><p>Financial members pay $200 by bank transfer, PayID, card or cash, then record the payment in the members area. Your welfare member services unlock as soon as the Treasurer confirms it.</p></li>
+                    <li><h3>Committee approval</h3><p>The committee approves your membership and gives you a member number. You'll see it on your dashboard.</p></li>
+                </ol>
+                <div class="register-cta">
+                    <a href="login.html#signup" class="btn btn-gold btn-lg">Create your account</a>
+                    <a href="login.html" class="btn btn-outline-ink btn-lg">Members portal</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<section class="section section-dark" id="benefits">
+    <div class="container">
+        <h2 class="section-title">What members receive</h2>
+        <p class="lead-light">Benefits marked <span class="tag">Welfare members</span> are for financial members whose joining fees have been confirmed by the Treasurer.
+           Some programs are still being set up in KENEWA's first year.</p>
+        <!-- UPDATE this list as programs start or change -->
+        <div class="benefits benefits-3">
+            <article class="benefit">
+                <h3>Bereavement support <span class="tag">Welfare members</span></h3>
+                <p>Financial help from the welfare fund when a member or registered family member dies, including funeral costs in Australia or repatriation to Kenya.</p>
+            </article>
+            <article class="benefit">
+                <h3>Help in illness and emergencies <span class="tag">Welfare members</span></h3>
+                <p>Hospital visits, meals, transport and, where approved, financial help after serious illness, injury, fire, flood or sudden job loss.</p>
+            </article>
+            <article class="benefit">
+                <h3>Direct support line</h3>
+                <p>Request help any time from your members area, or call the committee through the <a href="support.html">Get help</a> page. Every request is handled confidentially.</p>
+            </article>
+            <article class="benefit">
+                <h3>A vote and a voice <span class="tag">Welfare members</span></h3>
+                <p>Vote online and at general meetings, stand for the committee, and help decide how KENEWA and its welfare fund are run. Online votes are secret.</p>
+            </article>
+            <article class="benefit">
+                <h3>Digital membership card <span class="tag">Welfare members</span></h3>
+                <p>Your membership card and member number on your phone, ready to show or print.</p>
+            </article>
+            <article class="benefit">
+                <h3>Members' documents <span class="tag">Welfare members</span></h3>
+                <p>The constitution, meeting minutes, financial reports and the welfare fund policy, all in one place.</p>
+            </article>
+            <article class="benefit">
+                <h3>Coming soon <span class="tag">Welfare members</span></h3>
+                <p>A chama savings circle, interest-free emergency loans, education bursaries, a mentoring network, a member business directory and partner discounts.</p>
+            </article>
+            <article class="benefit">
+                <h3>Celebrating your milestones</h3>
+                <p>The community marks weddings, new babies, graduations and other happy moments with you.</p>
+            </article>
+            <article class="benefit">
+                <h3>Settling in</h3>
+                <p>Practical help for newcomers: housing, jobs, Medicare, Centrelink, licences and school enrolment, plus introductions to local services.</p>
+            </article>
+            <article class="benefit">
+                <h3>Events and celebrations</h3>
+                <p>Madaraka, Mashujaa and Jamhuri Day celebrations, family days and sports days, with member prices or free entry where possible.</p>
+            </article>
+            <article class="benefit">
+                <h3>Jobs and networking</h3>
+                <p>Job leads, CV help and contacts across health, agriculture, education, trades and business in the region.</p>
+            </article>
+            <article class="benefit">
+                <h3>Youth and students</h3>
+                <p>Orientation for international students, mentoring for young people, and a student representative on the committee.</p>
+            </article>
+            <article class="benefit">
+                <h3>Women's empowerment</h3>
+                <p>A women’s network and savings circles in the chama tradition.</p>
+            </article>
+            <article class="benefit">
+                <h3>Wellbeing</h3>
+                <p>Mental health and wellbeing sessions, and referrals to trusted services when life gets heavy.</p>
+            </article>
+            <article class="benefit">
+                <h3>Members-only updates</h3>
+                <p>Member news, the WhatsApp group, the quarterly newsletter and early notice of events and opportunities.</p>
+            </article>
+        </div>
+
+        <div class="text-center mt-5">
+            <a href="login.html#signup" class="btn btn-gold btn-lg">Create your account</a>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== DONATE ===================== -->
+<section class="donate-band">
+    <div class="container">
+        <div class="row g-4 align-items-center">
+            <div class="col-lg-8">
+                <h2>Stand with a family in need</h2>
+                <p>When a member's family faces bereavement, serious illness or sudden hardship, the KENEWA welfare fund
+                   is there. Donations from members, friends and local businesses help us respond quickly, the
+                   <span lang="sw">harambee</span> way.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <a href="welfare.html#donate" class="btn btn-gold btn-lg">Donate</a>
+            </div>
+        </div>
+    </div>
+</section>
+
 </main>
 
 <!-- ===================== FOOTER ===================== -->
 <footer class="site-footer">
     <div class="container">
         <div class="row g-4">
-            <div class="col-md-5">
+            <div class="col-lg-4">
+                <img src="images/logo-mark.svg" alt="" width="64" height="64" class="footer-logo">
                 <p class="footer-name">Kenyans in New England Welfare Association Inc</p>
+                <p class="footer-motto"><span lang="sw">Umoja ni nguvu</span>: unity is strength</p>
                 <p>A not-for-profit, non-political community association promoting the welfare, unity and
                    empowerment of Kenyans in the New England region of NSW.</p>
                 <p class="footer-reg">Incorporated in NSW under the <em>Associations Incorporation Act 2009</em><br>
                    Registration no. INC2601004 &middot; ABN 17 238 522 745</p>
             </div>
-            <div class="col-6 col-md-3">
-                <p class="footer-head">Explore</p>
+            <div class="col-6 col-md-4 col-lg-2">
+                <p class="footer-head">Quick links</p>
                 <ul class="footer-links">
                     <li><a href="about.html">About us</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="welfare.html">Welfare support</a></li>
                     <li><a href="membership.html">Membership</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="resources.html">Community resources</a></li>
+                    <li><a href="welfare.html">Welfare support</a></li>
+                    <li><a href="login.html">Members portal</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
-            <div class="col-6 col-md-4">
-                <p class="footer-head">Get in touch</p>
+            <div class="col-6 col-md-4 col-lg-3">
+                <p class="footer-head">Portfolios</p>
                 <ul class="footer-links">
-                    <!-- UPDATE with KNEWA's real contact details -->
-                    <li><i class="bi bi-envelope" aria-hidden="true"></i><a href="mailto:secretary@kenewa.org">secretary@kenewa.org</a></li>
-                    <li><i class="bi bi-geo-alt" aria-hidden="true"></i>Tamworth, NSW</li>
-                    <li><i class="bi bi-chat-dots" aria-hidden="true"></i><a href="contact.html">Contact form</a></li>
+                    <li><a href="portfolios.html#welfare">Welfare</a></li>
+                    <li><a href="portfolios.html#women">Women's empowerment</a></li>
+                    <li><a href="portfolios.html#youth">Students and youth</a></li>
+                    <li><a href="portfolios.html#sport">Sport and wellbeing</a></li>
+                    <li><a href="portfolios.html#culture">Culture and events</a></li>
+                    <li><a href="portfolios.html#communications">Communications and IT</a></li>
+                    <li><a href="portfolios.html#partnerships">Partnerships and grants</a></li>
                 </ul>
-                <!-- UPDATE: paste the links to KNEWA's pages in place of each # -->
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <p class="footer-head">Around the web</p>
+                <p>Follow KENEWA for event news, photos and community notices.</p>
                 <ul class="social">
-                    <li><a href="#" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href="#" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a></li>
-                    <li><a href="#" aria-label="TikTok"><i class="bi bi-tiktok" aria-hidden="true"></i></a></li>
-                    <li><a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61593756848950" target="_blank" rel="noopener">Facebook</a></li>
+                    <li><a href="https://wa.me/61475140471" target="_blank" rel="noopener">WhatsApp</a></li>
+                </ul>
+                <p class="footer-head mt-4">Get in touch</p>
+                <ul class="footer-links footer-contact">
+                    <li><a href="mailto:info@kenewa.org">info@kenewa.org</a></li>
+                    <li><a href="tel:+61475140471">0475 140 471</a> (call or <a href="https://wa.me/61475140471" target="_blank" rel="noopener">WhatsApp</a>)</li>
+                    <li>Tamworth and the New England region, NSW</li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
             <span>&copy; <span id="year">2026</span> Kenyans in New England Welfare Association Inc</span>
-            <a href="privacy.html">Privacy policy</a>
+            <span><a href="privacy.html">Privacy policy</a> &middot; <a href="child-safe.html">Child safety</a> &middot; <a href="credits.html">Photo credits</a> &middot; <a href="support.html">Get help</a></span>
         </div>
     </div>
 </footer>
+
+<!-- Floating help button (bottom right of every page) -->
+<a class="help-bubble" href="support.html" aria-label="Get help from KENEWA">
+    <svg viewBox="0 0 48 48" width="34" height="34" aria-hidden="true">
+        <circle cx="24" cy="17" r="8" fill="currentColor"/>
+        <path d="M9 41c1.5-8.5 7.5-13 15-13s13.5 4.5 15 13z" fill="currentColor"/>
+        <path d="M13 19a11 11 0 0 1 22 0" fill="none" stroke="#BBF7D0" stroke-width="3" stroke-linecap="round"/>
+        <rect x="10.5" y="17" width="4.5" height="8" rx="2" fill="#BBF7D0"/>
+        <rect x="33" y="17" width="4.5" height="8" rx="2" fill="#BBF7D0"/>
+    </svg>
+    <span class="help-bubble-label">Need help?</span>
+</a>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/main.js"></script>
